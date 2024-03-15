@@ -4,14 +4,13 @@ import { Container } from 'react-bootstrap'
 import './Homepage.css'
 
 function Homepage() {
+
     return (
         <>
             <div className='homepage' >
 
                 <section className="hero">
-                    <Container>
-                        <Hero />
-                    </Container>
+                    <Hero />
                 </section>
 
 
