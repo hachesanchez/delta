@@ -1,0 +1,29 @@
+.delta-logo {
+    height: 45px;
+    width: auto;
+}
+
+.custom-navbar {
+    background-color: white;
+}
+
+.navbar-nav {
+    padding: 10px 20px 10px 35px;
+}
+
+.navbar-nav .dropdown-menu {
+    border: none;
+}
+
+.nav-link {
+    font-weight: 600;
+}
+
+.dropdown-item {
+    margin-bottom: 5px;
+    color: rgb(89, 89, 89);
+}
+
+.dropdown-item:hover {
+    background-color: rgba(111, 144, 157, 0.448);
+}
