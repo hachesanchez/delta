@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import './App.css'
 import AppRoutes from './routes/AppRoutes'
 import Navigation from './pages/Navigation/Navigation'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './App.css'
 
 function App() {
 

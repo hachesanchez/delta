@@ -1,29 +1,126 @@
+.custom-navbar {
+    background-color: rgba(255, 255, 255, 0.945);
+    z-index: 1000;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    position: fixed;
+}
+
+.navbar-brand {
+    margin-left: 70px;
+}
+
 .delta-logo {
-    height: 45px;
+    height: 40px;
     width: auto;
 }
 
-.custom-navbar {
-    background-color: white;
+.navbar-toggler {
+    margin-right: 40px;
+    color: transparent;
 }
 
-.navbar-nav {
-    padding: 10px 20px 10px 35px;
+.navbar-toggler:hover {
+    color: rgb(198, 198, 198);
 }
 
-.navbar-nav .dropdown-menu {
-    border: none;
+.offcanvas-header {
+    padding: 20px;
+}
+
+.offcanvas-header .btn-close {
+    filter: invert();
+    padding: 30px;
+}
+
+#offcanvasNavbar-expand-lg {
+    background-color: #1A5A73;
+    color: white;
+}
+
+.offcanvas.show .offcanvas-title {
+    color: #68969c;
+    font-size: 3.5em;
+    font-weight: 600;
+    line-height: 90%;
+}
+
+.offcanvas.show .offcanvas-body {
+    padding-left: 50px;
 }
 
 .nav-link {
     font-weight: 600;
 }
 
+.navbar-nav .dropdown-menu {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.945);
+    padding: 15px;
+    margin-top: 30%;
+}
+
 .dropdown-item {
     margin-bottom: 5px;
-    color: rgb(89, 89, 89);
+    color: #525759 !important;
+
 }
 
 .dropdown-item:hover {
-    background-color: rgba(111, 144, 157, 0.448);
+    background-color: #B87A30 !important;
+    color: #eeeeee !important;
+}
+
+.offcanvas.show .dropdown-menu {
+    border: none;
+    background-color: transparent;
+}
+
+.offcanvas.show .dropdown-item {
+    margin-bottom: 5px;
+    color: #bababa !important;
+}
+
+.offcanvas.show .dropdown-item:hover {
+    background-color: #B87A30;
+    color: #eeeeee;
+}
+
+@media (max-width: 992px) {
+    body {
+        margin-top: 0;
+    }
+
+    .custom-navbar {
+        position: fixed;
+        background-color: white;
+        top: 0;
+        margin-top: 0;
+        padding-top: 0;
+        padding: 0 !important;
+        height: 70px;
+    }
+
+    .navbar-brand {
+        margin-left: 30px;
+    }
+
+    .offcanvas-body {
+        padding-left: 10px;
+    }
+
+    .offcanvas-title {
+        font-size: 4em;
+        padding: 20px;
+    }
+
+    .nav-link {
+        font-weight: 500;
+    }
+
+
+
+
+
 }

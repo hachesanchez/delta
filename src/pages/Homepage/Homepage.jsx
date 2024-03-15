@@ -1,13 +1,21 @@
 import React from 'react'
+import Hero from '../../components/Homepage/Hero'
+import { Container } from 'react-bootstrap'
 import './Homepage.css'
-import Navigation from '../Navigation/Navigation'
 
 function Homepage() {
     return (
         <>
-            <div >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat consequuntur rem fuga quis quisquam quo quod ullam ea a at illo, labore iure reprehenderit sint, alias dolor aut. Aperiam, <ea className="Lorem"></ea>
-            </div>
+            <div className='homepage' >
+
+                <section className="hero">
+                    <Container>
+                        <Hero />
+                    </Container>
+                </section>
+
+
+            </div >
         </>
     )
 }

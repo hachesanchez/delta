@@ -1,50 +1,59 @@
-import { useState } from 'react';
-import { Navbar, Nav, Container, NavDropdown, Offcanvas, Form, Button, Image } from 'react-bootstrap';
+import { useState, useEffect } from 'react';
+import { Navbar, Nav, Container, NavDropdown, Offcanvas, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import deltaLogo from '../../assets/logos/delta-logo.jpg'
+import deltaLogo from '../../assets/logos/delta-logo.png';
 import './Navigation.css';
 
 export default function Navigation() {
 
 
-    const [show, setShow] = useState(false);
+    const [showOffcanvas, setShowOffcanvas] = useState(false);
 
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    const handleCloseOffcanvas = () => setShowOffcanvas(false);
+    const handleShowOffcanvas = () => setShowOffcanvas(true);
+
+    const handleLinkClick = () => handleCloseOffcanvas();
+
 
     return (
 
-        <Navbar expand="lg" className="custom-navbar  bg-body-tertiary mb-3">
+
+        <Navbar
+            fixed="top"
+            expand="xxl"
+            className={`custom-navbar ${showOffcanvas ? 'with-offcanvas' : ''}`}
+        >
 
             <Container fluid>
 
-                <Navbar.Toggle aria-controls="offcanvasNavbar-expand-lg" onClick={handleShow} />
-
-                <Navbar.Brand as={Link} to={'/'} className='nav-brand' >
+                <Navbar.Brand as={Link} to={'/'} className='nav-brand'>
                     <Image src={deltaLogo} alt='Delta Ecografía logo' className='delta-logo' />
                 </Navbar.Brand>
+
+                <Navbar.Toggle aria-controls="offcanvasNavbar-expand-lg" onClick={handleShowOffcanvas} />
 
                 <Navbar.Offcanvas
                     id="offcanvasNavbar-expand-lg"
                     aria-labelledby="offcanvasNavbarLabel-expand-lg"
-                    placement="start"
-
+                    placement="end"
+                    show={showOffcanvas}
+                    onHide={handleCloseOffcanvas}
                 >
                     <Offcanvas.Header closeButton>
                         <Offcanvas.Title id="offcanvasNavbarLabel-expand-lg">
-                            DELTA ECOGRAFÍA
+                            delta ecografía
                         </Offcanvas.Title>
                     </Offcanvas.Header>
 
                     <Offcanvas.Body>
                         <Nav className="justify-content-end flex-grow-1 pe-3">
                             <Nav.Link as="span">
-                                <Link to="/" className="nav-link" onClick={handleClose}>
+                                <Link to="/" className="nav-link" onClick={handleLinkClick}>
                                     Inicio
                                 </Link>
                             </Nav.Link>
                             <Nav.Link as="span">
-                                <Link to="/equipo" className="nav-link" onClick={handleClose}>
+                                <Link to="/equipo" className="nav-link" onClick={handleLinkClick}>
                                     Equipo
                                 </Link>
                             </Nav.Link>
@@ -57,21 +66,21 @@ export default function Navigation() {
                                         as={Link}
                                         to={'/hacemos/ecografia-obstetrica'}
                                         className='dropdown-item'
-                                        onClick={handleClose}
+                                        onClick={handleLinkClick}
                                     >
                                         Ecografía Obstétrica
                                     </NavDropdown.Item>
                                     <NavDropdown.Item
                                         as={Link}
                                         to={'/hacemos/ecografia-ginecologica'} className='dropdown-item'
-                                        onClick={handleClose}
+                                        onClick={handleLinkClick}
                                     >
                                         Ecografía Ginecológica
                                     </NavDropdown.Item>
                                     <NavDropdown.Item
                                         as={Link}
                                         to={'/hacemos/ecografia-onclogogica'} className='dropdown-item'
-                                        onClick={handleClose}
+                                        onClick={handleLinkClick}
                                     >
                                         Ecografía Onclogógica
                                     </NavDropdown.Item>
@@ -79,7 +88,7 @@ export default function Navigation() {
                                     <NavDropdown.Item
                                         as={Link}
                                         to={'/hacemos/ecografia-de-mama'} className='dropdown-item'
-                                        onClick={handleClose}
+                                        onClick={handleLinkClick}
                                     >
                                         Ecografía de mama
                                     </NavDropdown.Item>
@@ -87,7 +96,7 @@ export default function Navigation() {
                                     <NavDropdown.Item
                                         as={Link}
                                         to={'/hacemos/neurosonografía'} className='dropdown-item'
-                                        onClick={handleClose}
+                                        onClick={handleLinkClick}
                                     >
                                         Neurosonografía
                                     </NavDropdown.Item>
@@ -95,7 +104,7 @@ export default function Navigation() {
                                     <NavDropdown.Item
                                         as={Link}
                                         to={'/hacemos/earterias-uterinas'} className='dropdown-item'
-                                        onClick={handleClose}
+                                        onClick={handleLinkClick}
                                     >
                                         Arterias uterinas
                                     </NavDropdown.Item>
@@ -103,7 +112,7 @@ export default function Navigation() {
                                     <NavDropdown.Item
                                         as={Link}
                                         to={'/hacemos/longitud-vertical'} className='dropdown-item'
-                                        onClick={handleClose}
+                                        onClick={handleLinkClick}
                                     >
                                         Longitud vertical
                                     </NavDropdown.Item>
@@ -111,7 +120,7 @@ export default function Navigation() {
                                     <NavDropdown.Item
                                         as={Link}
                                         to={'/hacemos/dismorfologia-fetal'} className='dropdown-item'
-                                        onClick={handleClose}
+                                        onClick={handleLinkClick}
                                     >
                                         Dismorfología Fetal
                                     </NavDropdown.Item>
@@ -119,7 +128,7 @@ export default function Navigation() {
                                     <NavDropdown.Item
                                         as={Link}
                                         to={'/hacemos/malformaciones-uterinas'} className='dropdown-item'
-                                        onClick={handleClose}
+                                        onClick={handleLinkClick}
                                     >
                                         Malformaciones Uterinas
                                     </NavDropdown.Item>
@@ -127,7 +136,7 @@ export default function Navigation() {
                                     <NavDropdown.Item
                                         as={Link}
                                         to={'/hacemos/suelo-pelvico'} className='dropdown-item'
-                                        onClick={handleClose}
+                                        onClick={handleLinkClick}
                                     >
                                         Suelo Pélvico
                                     </NavDropdown.Item>
@@ -135,20 +144,20 @@ export default function Navigation() {
                                     <NavDropdown.Item
                                         as={Link}
                                         to={'/hacemos/histerosonosalpingrografía'} className='dropdown-item'
-                                        onClick={handleClose}
+                                        onClick={handleLinkClick}
                                     >
                                         Histerosonosalpingrografía                                    </NavDropdown.Item>
                                     {/* <NavDropdown.Divider /> */}
                                     <NavDropdown.Item
                                         as={Link}
                                         to={'/hacemos/endometriosis-pelvica'} className='dropdown-item'
-                                        onClick={handleClose}
+                                        onClick={handleLinkClick}
                                     >
                                         Endometriosis Pélvica
                                     </NavDropdown.Item>
 
                                 </NavDropdown>
-                                {/* <Link to="/" className="nav-link" onClick={handleClose}>
+                                {/* <Link to="/" className="nav-link" onClick={handleLinkClick}>
                                     Qué hacemos
                                 </Link> */}
                             </Nav.Link>
@@ -161,7 +170,7 @@ export default function Navigation() {
                                         as={Link}
                                         to={'/sabermas/ecografia-3d-4d'}
                                         className='dropdown-item'
-                                        onClick={handleClose}
+                                        onClick={handleLinkClick}
                                     >
                                         Ecografía 3D/4D
                                     </NavDropdown.Item>
@@ -170,7 +179,7 @@ export default function Navigation() {
                                         as={Link}
                                         to={'/sabermas/ecografia-embarazo'}
                                         className='dropdown-item'
-                                        onClick={handleClose}
+                                        onClick={handleLinkClick}
                                     >
                                         Ecografía en el embarazo
                                     </NavDropdown.Item>
@@ -179,7 +188,7 @@ export default function Navigation() {
                                         as={Link}
                                         to={'/sabermas/biopsia-corial'}
                                         className='dropdown-item'
-                                        onClick={handleClose}
+                                        onClick={handleLinkClick}
                                     >
                                         Biopsia Corial
                                     </NavDropdown.Item>
@@ -188,7 +197,7 @@ export default function Navigation() {
                                         as={Link}
                                         to={'/sabermas/amniocentesis'}
                                         className='dropdown-item'
-                                        onClick={handleClose}
+                                        onClick={handleLinkClick}
                                     >
                                         Amniocentesis
                                     </NavDropdown.Item>
@@ -197,7 +206,7 @@ export default function Navigation() {
                                         as={Link}
                                         to={'/sabermas/cromosomopatia'}
                                         className='dropdown-item'
-                                        onClick={handleClose}
+                                        onClick={handleLinkClick}
                                     >
                                         Cromosomopatía
                                     </NavDropdown.Item>
@@ -206,7 +215,7 @@ export default function Navigation() {
                                         as={Link}
                                         to={'/sabermas/microarrays'}
                                         className='dropdown-item'
-                                        onClick={handleClose}
+                                        onClick={handleLinkClick}
                                     >
                                         Microarrays
                                     </NavDropdown.Item>
@@ -215,7 +224,7 @@ export default function Navigation() {
                                         as={Link}
                                         to={'/sabermas/adn-fetal'}
                                         className='dropdown-item'
-                                        onClick={handleClose}
+                                        onClick={handleLinkClick}
                                     >
                                         ADN Fetal en sangre materna
                                     </NavDropdown.Item>
@@ -223,24 +232,28 @@ export default function Navigation() {
                             </Nav.Link>
 
                             <Nav.Link as="span">
-                                <Link to="/contacta" className="nav-link" onClick={handleClose}>
+                                <Link to="/contacta" className="nav-link" onClick={handleLinkClick}>
                                     Contacta
                                 </Link>
                             </Nav.Link>
 
+
                         </Nav>
                         {/* <Form className="d-flex">
                             <Form.Control
-                                type="search"
-                                placeholder="Search"
-                                className="me-2"
-                                aria-label="Search"
+                            type="search"
+                            placeholder="Search"
+                            className="me-2"
+                            aria-label="Search"
                             />
                             <Button variant="outline-success">Search</Button>
                         </Form> */}
                     </Offcanvas.Body>
+
                 </Navbar.Offcanvas>
+
             </Container>
-        </Navbar >
+
+        </Navbar>
     );
 }
