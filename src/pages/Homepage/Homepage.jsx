@@ -9,13 +9,14 @@ function Homepage() {
     return (
         <>
             <div className='homepage' >
-
-                <section className="hero">
+                <div className="hero">
                     <Hero />
+                </div>
+                <MoreInfo />
+                {/* <section className="hero">
                 </section>
                 <section className="more-info">
-                    <MoreInfo />
-                </section>
+                </section> */}
 
 
             </div >
