@@ -45,12 +45,13 @@ function Hero() {
                 </Col>
 
                 <Col className='hero-image'>
-                    <Image src={heroImg} alt='Ecografía en Delta' />
-                    <div className='circle'></div>
-                    <div className="arrow-mobile">
-                        <ScrollLink to="hero-title" smooth={true} duration={200} offset={-40}>
-                            <BsChevronDown />
-                        </ScrollLink>
+                    <div className="image-container">
+                        <Image src={heroImg} alt='Ecografía en Delta' />
+                        <div className="arrow-mobile">
+                            <ScrollLink to="hero-body" smooth={true} duration={200} offset={-15}>
+                                <BsChevronDown />
+                            </ScrollLink>
+                        </div>
                     </div>
                 </Col>
 
