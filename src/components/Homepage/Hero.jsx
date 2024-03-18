@@ -13,7 +13,7 @@ function Hero() {
     return (
 
         <>
-            <Row className='hero-row-header'>
+            <Row className='g-0 hero-row-header'>
 
                 <Col className='hero-body'>
                     <p className='hero-title'>
@@ -26,12 +26,6 @@ function Hero() {
                             de médicos especialistas en el estudio ecográfico, ginecológico y obstétrico.
                         </p>
                     </div>
-
-                    {/* <div className="arrow-large">
-                        <ScrollLink to="hero-row-info" smooth={true} duration={100} offset={100}>
-                            <BsChevronDown />
-                        </ScrollLink>
-                    </div> */}
 
                     <div className="hero-text-mobile">
 
