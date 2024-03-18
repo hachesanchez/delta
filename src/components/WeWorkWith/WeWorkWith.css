@@ -1,6 +1,28 @@
 .we-work-with {
     margin-top: 70px;
     margin-bottom: 70px;
+    opacity: 0;
+}
+
+.reveal {
+    animation: revealAnimation 2s ease forwards;
+}
+
+@keyframes revealAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.we-work-with.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .work-with-title {
