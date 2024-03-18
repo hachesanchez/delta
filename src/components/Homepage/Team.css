@@ -1,0 +1,28 @@
+.team {
+    background-color: #195672;
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.team-text {
+    max-width: 800px;
+    display: block;
+}
+
+.team-title {
+    color: white;
+    font-family: 'Playfair', serif;
+    font-size: 2.5em;
+    line-height: 110%;
+}
+
+
+@media (max-width: 992px) {
+
+    .team-title {
+        font-size: 2.2em;
+        padding: 20px;
+    }
+}

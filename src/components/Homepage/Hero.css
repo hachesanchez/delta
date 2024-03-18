@@ -16,14 +16,15 @@
 }
 
 .hero-title {
-    font-size: 3.5em;
+    font-size: 4.5em;
     color: #1A5A73;
     line-height: 100%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Playfair', serif;
 }
 
 .hero-text {
     color: #525759;
+    margin-right: 30px;
 }
 
 .circle {
@@ -147,6 +148,7 @@
 
     .hero-text {
         margin-bottom: 100px;
+        margin-right: 0px
     }
 
     .arrow-large {

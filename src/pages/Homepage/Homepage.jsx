@@ -3,7 +3,9 @@ import Hero from '../../components/Homepage/Hero'
 import { Container } from 'react-bootstrap'
 import './Homepage.css'
 import MoreInfo from '../../components/Homepage/MoreInfo'
-import WeWorkWith from '../../components/WeWorkWith/WeWorkWith'
+import WeWorkWith from '../../components/Homepage/WeWorkWith'
+import Team from '../../components/Homepage/Team'
+import CarrouselTeam from '../../components/Homepage/CarrouselTeam'
 
 function Homepage() {
 
@@ -14,6 +16,8 @@ function Homepage() {
                     <Hero />
                 </div>
                 <MoreInfo />
+                <Team />
+                <CarrouselTeam />
                 <WeWorkWith />
             </div >
         </>
