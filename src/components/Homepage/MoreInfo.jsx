@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import ReactCardFlip from 'react-card-flip';
 // import { handleCardClick } from '../../utils/handleCardClick';
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col, Container } from 'react-bootstrap'
 import './MoreInfo.css'
 import iconAmnio from '../../assets/images/iconAmniocentesis.png'
 import iconBiopsia from '../../assets/images/iconBiopsia.png'
@@ -28,7 +28,7 @@ function MoreInfo() {
             name: 'neurosonografía',
             image: iconNeuro,
             title: 'Neurosonografía fetal',
-            body: 'Estudio de las enfermedades del sistema nervioso central a través de un equipo multidisciplinar que engloba el diagnóstico, pronóstico, posibilidades de tratamiento e información a los padres. Este equipo está formado por profesionales del diagnóstico prenatal específicamente formados en neurosonografía, neurólogos pediátricos, genetistas y neurocirujanos.',
+            body: 'Estudio de las enfermedades del sistema nervioso central a través de un equipo multidisciplinar que engloba el diagnóstico, pronóstico, posibilidades de tratamiento e información a los padres.',
         },
         {
             name: 'biopsia',
@@ -62,61 +62,69 @@ function MoreInfo() {
         // }
     ];
 
-    const [isFlipped, setIsFlipped] = useState(false);
+    const [isFlipped, setIsFlipped] = useState({});
 
-    const handleMouseEnter = () => setIsFlipped(true);
-    const handleMouseLeave = () => setIsFlipped(false);
+    // const handleMouseEnter = () => setIsFlipped(true);
+    // const handleMouseLeave = () => setIsFlipped(false);
 
+    const handleMouseEnter = (name) => {
+        setIsFlipped(prevState => ({
+            ...prevState,
+            [name]: true
+        }));
+    };
+
+    const handleMouseLeave = (name) => {
+        setIsFlipped(prevState => ({
+            ...prevState,
+            [name]: false
+        }));
+    };
 
 
     return (
         <>
 
             <div className="more-info">
-
-
-                <Row  >
-                    <div className='more-info-container'>
-
-                        <div className="more-info-text">
-                            <p className='more-info-title'>
-                                Dentro de nuestro trabajo somos pioneros en la ecografía tridimensional conocida como Ecografía 3D/4D.
-                            </p>
-                            <p className='more-info-body'>
-                                La mayoría de la gente piensa que este tipo de ecografía sólo es útil para las mujeres embarazadas, pero no es así.
-                                También es importante para otros estudios como los relacionados con las malformaciones uterinas, el suelo de la pelvis,
-                                los tumores de ovario o el cáncer de endometrio.
-                            </p>
-                        </div>
-                    </div >
-                </Row>
-
+                <div className='more-info-container'>
+                    <div className="more-info-text">
+                        <p className='more-info-title'>
+                            Dentro de nuestro trabajo somos pioneros en la ecografía tridimensional conocida como Ecografía 3D/4D.
+                        </p>
+                        <p className='more-info-body'>
+                            La mayoría de la gente piensa que este tipo de ecografía solo es útil para las mujeres embarazadas, pero no es así.
+                            También es importante para otros estudios como los relacionados con las malformaciones uterinas, el suelo de la pelvis,
+                            los tumores de ovario o el cáncer de endometrio.
+                        </p>
+                    </div>
+                </div>
                 <div className='more-info-cards'>
-                    {data.map((e) => (
-                        <Col className='more-info-card-col'>
-                            <div
-                                className="more-info-card m-2"
-                            // onMouseEnter={handleMouseEnter}
-                            // onMouseLeave={handleMouseLeave}
-                            // onClick={() => handleCardClick(user)}
-                            >
-                                <ReactCardFlip flipDirection="horizontal" isFlipped={isFlipped}>
-                                    <div className="more-info-card-front">
-                                        <img className="more-info-card-image" src={e.image} alt={''} />
-                                    </div>
-                                    <div className="more-info-card-back">
-                                        {/* <img className="more-info-card-image-back" src={''} alt={'user.username'} /> */}
-                                        <div className="more-info-card-text">
-                                            <p className="more-info-card-title">{e.title}</p>
-                                            <p className="more-info-card-body"> {e.body}</p>
+                    <div className='more-info-container'>
+                        {data.map((e) => (
+                            <div className="more-info-card-container" key={e.name}>
+                                <div
+                                    className="more-info-card"
+                                    onMouseEnter={() => handleMouseEnter(e.name)}
+                                    onMouseLeave={() => handleMouseLeave(e.name)}
+                                >
+                                    <ReactCardFlip flipDirection="horizontal" isFlipped={isFlipped[e.name] || false}>
+                                        <div className="more-info-card">
+                                            <img className="more-info-card-image" src={e.image} alt={''} />
                                         </div>
-                                    </div>
-                                </ReactCardFlip>
+                                        <div className="more-info-card back">
+                                            <div className="more-info-card-text">
+                                                <p className="more-info-card-title">{e.title}</p>
+                                                <p className="more-info-card-body">{e.body}</p>
+                                            </div>
+                                        </div>
+                                    </ReactCardFlip>
+                                </div>
                             </div>
-                        </Col>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             </div>
+
         </>
     )
 }

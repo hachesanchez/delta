@@ -13,12 +13,6 @@ function Homepage() {
                     <Hero />
                 </div>
                 <MoreInfo />
-                {/* <section className="hero">
-                </section>
-                <section className="more-info">
-                </section> */}
-
-
             </div >
         </>
     )
