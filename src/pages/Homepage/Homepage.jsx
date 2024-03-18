@@ -3,6 +3,7 @@ import Hero from '../../components/Homepage/Hero'
 import { Container } from 'react-bootstrap'
 import './Homepage.css'
 import MoreInfo from '../../components/Homepage/MoreInfo'
+import WeWorkWith from '../../components/WeWorkWith/WeWorkWith'
 
 function Homepage() {
 
@@ -13,6 +14,7 @@ function Homepage() {
                     <Hero />
                 </div>
                 <MoreInfo />
+                <WeWorkWith />
             </div >
         </>
     )

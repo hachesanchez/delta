@@ -1,8 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
 import ReactCardFlip from 'react-card-flip';
-// import { handleCardClick } from '../../utils/handleCardClick';
-import { Row, Col, Container } from 'react-bootstrap'
 import './MoreInfo.css'
 import iconAmnio from '../../assets/images/iconAmniocentesis.png'
 import iconBiopsia from '../../assets/images/iconBiopsia.png'
@@ -11,7 +9,9 @@ import iconDismorfo from '../../assets/images/iconDismorfologia.png'
 import iconEco from '../../assets/images/iconEcografia.png'
 import iconHistero from '../../assets/images/iconHisterosonosalpingografia.png'
 import iconNeuro from '../../assets/images/iconNeurosonografia.png'
-
+import iconEndometriosos from '../../assets/images/iconEndometriosis.png'
+import { useNavigate } from 'react-router';
+import { Link } from 'react-router-dom';
 
 
 function MoreInfo() {
@@ -23,49 +23,61 @@ function MoreInfo() {
             image: iconEco,
             title: 'Ecografías 3D/4D',
             body: 'Las ecografías 3D/4D, junto con la imagen tradicional en dos dimensiones, nos permiten visualizar al feto con gran precisión, acercando a los padres y a los profesionales de la obstetricia a ese extraordinario mundo que es la vida antes de nacer.',
+            url: '/sabermas/ecografia-3d-4d'
         },
         {
             name: 'neurosonografía',
             image: iconNeuro,
             title: 'Neurosonografía fetal',
             body: 'Estudio de las enfermedades del sistema nervioso central a través de un equipo multidisciplinar que engloba el diagnóstico, pronóstico, posibilidades de tratamiento e información a los padres.',
+            url: '/hacemos/neurosonografía'
         },
         {
             name: 'biopsia',
             image: iconBiopsia,
             title: 'Biopsia Corial',
             body: 'La biopsia corial consiste en la obtención de una muestra de placenta entre la 10ª y la 14ª semanas de embarazo.Su composición genética es idéntica a la del feto y refleja la misma situación cromosómica, bioquímica y genética del mismo.',
+            url: '/biopsia-corial'
         },
         {
             name: 'dismorfología',
             image: iconDismorfo,
             title: 'Dismorfología fetal',
             body: 'El objetivo de la Dismorfología Fetal es orientar el diagnóstico de una Enfermedad Cromosómica, como por ejemplo el Sind de Down, o de una Enfermedad Rara a través de pequeños detalles de la cara, orejas, manos y pies.',
+            url: '/hacemos/dismorfologia-fetal'
+
         },
         {
             name: 'amnsiocentesis',
             image: iconAmnio,
             title: 'Amniocentesis',
             body: 'Extracción de líquido amniótico mediante la punción del útero gestante. Es el procedimiento invasivo más antiguo del diagnóstico prenatal.',
+            url: '/sabermas/amniocentesis'
         },
         {
             name: 'histerosonosalpingografía',
             image: iconHistero,
             title: 'Histerosonosalpingografía',
             body: 'Se trata de una técnica que se usa fundamentalmente para valorar la permeabilidad de las trompas mediante ecografía.',
+            url: '/hacemos/histerosonosalpingrografía'
         },
-        // {
-        //     name: 'cromosomopatia',
-        //     image: iconCromo,
-        //     title: 'Cromosomopatia',
-        //     body: 'Aparecen en el 0.5-0.7% de los fetos y son responsables del 12-15% de todos los defectos congénitos. Pueden ser numéricas o estructurales y la más frecuente es la trisomía 21 (Síndrome de Down).',
-        // }
+        {
+            name: 'cromosomopatia',
+            image: iconCromo,
+            title: 'Cromosomopatia',
+            body: 'Aparecen en el 0.5-0.7% de los fetos y son responsables del 12-15% de todos los defectos congénitos. Pueden ser numéricas o estructurales y la más frecuente es la trisomía 21 (Síndrome de Down).',
+            url: '/sabermas/cromosomopatia'
+        },
+        {
+            name: 'endometiosis',
+            image: iconEndometriosos,
+            title: 'Endometriosis',
+            body: 'La endometriosis es una enfermedad benigna, crónica, en la que el tejido que normalmente tapiza el útero, el endometrio, crece fuera del mismo. Se estima que una de cada diez mujeres en edad reproductiva tienen endometriosis.',
+            url: '/hacemos/endometriosis-pelvica'
+        }
     ];
 
     const [isFlipped, setIsFlipped] = useState({});
-
-    // const handleMouseEnter = () => setIsFlipped(true);
-    // const handleMouseLeave = () => setIsFlipped(false);
 
     const handleMouseEnter = (name) => {
         setIsFlipped(prevState => ({
@@ -81,12 +93,18 @@ function MoreInfo() {
         }));
     };
 
+    const navigate = useNavigate()
+
+    const handleCardClick = (url) => {
+        navigate(url)
+    }
+
 
     return (
         <>
-
             <div className="more-info">
-                <div className='more-info-container'>
+
+                <div className='more-info-container-text'>
                     <div className="more-info-text">
                         <p className='more-info-title'>
                             Dentro de nuestro trabajo somos pioneros en la ecografía tridimensional conocida como Ecografía 3D/4D.
@@ -98,8 +116,9 @@ function MoreInfo() {
                         </p>
                     </div>
                 </div>
+
                 <div className='more-info-cards'>
-                    <div className='more-info-container'>
+                    <div className='more-info-container-cards'>
                         {data.map((e) => (
                             <div className="more-info-card-container" key={e.name}>
                                 <div
@@ -115,6 +134,9 @@ function MoreInfo() {
                                             <div className="more-info-card-text">
                                                 <p className="more-info-card-title">{e.title}</p>
                                                 <p className="more-info-card-body">{e.body}</p>
+                                                <Link to={e.url} className='more-info-card-link' onClick={() => handleCardClick(e.url)}>
+                                                    <p >Saber más</p>
+                                                </Link>
                                             </div>
                                         </div>
                                     </ReactCardFlip>
@@ -123,8 +145,8 @@ function MoreInfo() {
                         ))}
                     </div>
                 </div>
-            </div>
 
+            </div>
         </>
     )
 }

@@ -1,0 +1,37 @@
+.we-work-with {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.work-with-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.2em;
+    line-height: 110%;
+    margin-bottom: 40px;
+    color: #525759;
+}
+
+.work-with-cards {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-with-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+
+
+@media (max-width: 992px) {
+
+    .work-with-title {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+}
