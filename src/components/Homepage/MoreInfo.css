@@ -1,6 +1,5 @@
 .more-info {
     background-color: white;
-
 }
 
 .more-info-container-text {
@@ -19,7 +18,7 @@
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
 
 .more-info-text {

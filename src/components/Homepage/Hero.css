@@ -71,12 +71,19 @@
 
 
 @media (max-width: 1400px) {
-    .hero-image {
-        text-align: center;
+    /* .hero-image {
+        text-align: left;
     }
+         */
 }
 
-@media (max-width: 1071px) {
+@media (max-width: 1072px) {
+
+    .hero {
+        margin-top: 50px;
+        padding: 0px
+    }
+
     .circle {
         display: none;
     }
@@ -95,7 +102,7 @@
     }
 
     .hero-image img {
-        width: 720px;
+        width: 100vw;
         height: auto;
     }
 
@@ -138,7 +145,8 @@
         object-fit: cover;
         height: 100%;
         margin-bottom: 30px;
-        position: relative
+        position: relative;
+        object-position: 10%;
     }
 
     .hero-title {

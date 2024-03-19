@@ -6,6 +6,7 @@ import slide2 from '../../assets/images/teamGeneral-2.jpg'
 import slide3 from '../../assets/images/teamGeneral-3.jpg'
 import slide4 from '../../assets/images/teamGeneral-4.jpg'
 import slide5 from '../../assets/images/teamGeneral-5.jpg'
+import slide6 from '../../assets/images/teamGeneral-6.jpg'
 import './CarrouselTeam.css'
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -20,7 +21,7 @@ function CarrouselTeam() {
                 spaceBetween={20}
                 slidesPerView={'1.3'}
                 centeredSlides={true}
-                navigation={false}
+                navigation={window.innerWidth > 992}
                 loop={true}
                 pagination={{
                     clickable: true,
@@ -35,16 +36,19 @@ function CarrouselTeam() {
                     <img src={slide5} alt='Equipo de Delta Ecografía' />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={slide2} alt='Equipo de Delta Ecografía' />
+                    <img src={slide3} alt='Equipo de Delta Ecografía' />
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={slide1} alt='Equipo de Delta Ecografía' />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={slide3} alt='Equipo de Delta Ecografía' />
+                    <img src={slide2} alt='Equipo de Delta Ecografía' />
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={slide4} alt='Equipo de Delta Ecografía' />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={slide6} alt='Equipo de Delta Ecografía' />
                 </SwiperSlide>
             </Swiper>
         </div>
