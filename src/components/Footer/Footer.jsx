@@ -68,7 +68,7 @@ function Footer() {
                     </Col>
                 </Row>
                 <hr />
-                {/* TODO: Aviso legal, cookies */}
+                {/* TODO: Aviso legal, cookies, privacidad */}
                 <Row className='footer-sections'>
                     <Col className='footer-extra-links' lg={6} md={12} sm={12} >
                         <Link to={'#'}>Política de Privacidad</Link> |

@@ -1,0 +1,91 @@
+{
+    "doctors": {
+        "pilar": {
+            "name": "Pilar Mártínez Ten",
+            "avatar": "https://res.cloudinary.com/dhxbmco0b/image/upload/v1710874118/delta/baja_DELTA_retratos-2_jbnvdw.jpg",
+            "experience": [
+                {
+                    "subtitle": "Experiencia",
+                    "content": [
+                        "Licenciada en Medicina y Cirugía por la Universidad Complutense de Madrid en 1981.",
+                        "Especialista en Obstetricia y Ginecología Universidad Complutense de Madrid (1987).",
+                        "Profesora asociada en Ciencias de la Salud del Departamento de Obstetricia y Ginecología de la Facultad de Medicina de la Universidad Complutense de Madrid desde 1990 hasta Mayo del 2000.",
+                        "Adjunta Especialista en el Servicio de Obstetricia y Ginecología del Hospital Clínico San Carlos de Madrid desde 1987 hasta mayo del 2000 codirigiendo la Unidad de Ecografía y Diagnóstico Prenatal.",
+                        "Grado de Doctora en Medicina y Cirugía por la Universidad Complutense de Madrid (1990). Tesis titulada Estudio Ecográfico del Adenocarcinoma de Endometrio. Apto Cum Laude por Unanimidad.",
+                        "Premio Extraordinario de Doctora (julio 1991).",
+                        "Niveles I, II, III y IV de la sección de ecografía de la Sociedad Española de Obstetricia y Ginecología (SEGO).",
+                        "Premio de la Sociedad de Ginecología y Obstetricia de Madrid (1996) por el trabajo titulado 'La ecografía de alta resolución y el Doppler color en la diferenciación entre nódulos de mama benignos y malignos'.",
+                        "Profesora de la Escuela Española de Ultrasonidos.",
+                        "Directora del centro de diagnóstico por la imagen en Obstetricia y Ginecología Delta-Ecografía desde su fundación en 1992.",
+                        "Nivel de Experto Docente en Ecografía de la sección de ecografía de la Sociedad Española de Obstetricia y Ginecología (SESEGO) desde 2014."
+                    ]
+                }
+            ],
+            "publications": [
+                {
+                    "subtitle": "Publicaciones",
+                    "content": [
+                        "87 publicaciones en revistas de ámbito nacional y 26 de ámbito internacional. La mayoría centradas en la investigación en ecografía ginecológica y diagnóstico prenatal.",
+                        "12 participaciones en la elaboración de libros nacionales y Coordinadora-Editora de un libro internacional."
+                    ]
+                }
+            ],
+            "presentations": [
+                {
+                    "subtitle": "Comunicaciones y ponencias",
+                    "content": [
+                        "189 comunicaciones orales y postérs en congresos de ámbito nacional e internacional. 143 ponencias en cursos y congresos nacionales."
+                    ]
+                }
+            ],
+            "today": [
+                {
+                    "subtitle": "Líneas actuales de trabajo",
+                    "content": [
+                        "Ecografia tridimensional en el estudio del fenotipo de los fetos con cromosomopatias y Síndromes, ecografia en la diferenciación del cáncer de mama, diagnóstico con ecografía tridimensional de las malformaciones uterinas, estudio con ecografia tridimensional de la embriología humana y fisuras labiopalatínas. Estudio del hueso nasal en el primer trimestre y neurosonografía."
+                    ]
+                }
+            ]
+        },
+        "carmina": {
+            "name": "Carmina Bermejo",
+            "avatar": "https://res.cloudinary.com/dhxbmco0b/image/upload/v1710874605/delta/baja_DELTA_retratos-3_izlblv.jpg",
+            "experience": [
+                {
+                    "subtitle": "Experiencia",
+                    "content": [
+                        "Licenciada en Medicina y Cirugía con grado (por realización de tesina titulada: Estudio de las Resistencias Plasmídicas en el Género Salmonella, presentada en Octubre de 1988 y que obtuvo la calificación de sobresaliente) en U.C.M. (1982-1988).",
+                        "Especialista en Obstetricia y Ginecología (vía MIR, Hospital Clínico San Carlos de Madrid, 1989-1992).",
+                        "Doctora en Medicina y Cirugía por la U.C.M. (1994) con tesis titulada: La Ultrasonografía Transvaginal en el Diagnóstico del Embarazo Ectópico, que obtuvo la calificación de Apto Cum Laude por unanimidad. Residencia en H. Clínico San Carlos. (1989-1992).",
+                        "Nivel IV de Ecografía Gineco-obstétrica desde 1998.",
+                        "Título de experto docente en Ecografía Gineco-obstétrica de la SEGO 2016.",
+                        "Directora de la Unidad de Ecografía y Diagnóstico Prenatal de Gabinete Médico Velázquez desde 1998- Octubre 2014.",
+                        "Codirectora de Obstericia y Ginecología de Gabinete Médico Velázquez desde Octubre de 2012- Octubre 2014.",
+                        "Miembro de la Sociedad Española de Ginecología y Obstetricia SEGO, desde 1989 y de su Sección de Ecografía, SESEGO.",
+                        "Primer premio IX Convocatoria de Premios de la Sociedad Madrileña de Ginecología y Obstetricia: Diagnóstico Ecográfico y Estadiaje del Adenocarcinoma de Endometrio (Garcia Santos J., Gómez Ruiz M., Bermejo C, Monte Mercado JC., Fasero M), 1998.",
+                        "Accesit Congreso Nacional de Sesego Valencia 2006 por comunicación titulada: La Ecografía 3D en el Diagnóstico de las Malformaciones Uterinas.(Bermejo C, Olmos C., Medina L., Díaz D.).",
+                        "Profesora de la Escuela Española de Ultrasonidos en Obstetricia y Ginecología (SESEGO) desde 2007, habiendo impartido clases en los cursos de formación básica (niveles I y II de la SESEGO), así como autora de los capítulos 11, 12 y 13 del Curso teórico Práctico de Ecografía-SESEGO, 2ª edición 2012.",
+                        "Profesora en Curso Básico de Ecografía y Doppler en Ginecología y Obstetricia (niveles I y II de la SESEGO) desde 2009, así como de los cursos on line correspondientes a los años 2011 y 2012, Fundación Dexeus. Salud de la Mujer.",
+                        "Profesora de la Escuela Internacional de Ecografía 3D de Madrid (1er Master para expertos Misus, 2010).",
+                        "Profesora y organizadora en los cursos de Neurosonografía 3D celebrados en Delta-Ecografía.",
+                        "Miembro del Comité Científico y Organizador de las Jornadas (anuales) de Actualización en Ginecología y Obstetricia de Gabinete Médico Velázquez desde 2005 hasta 2014.",
+                        "Miembro del Comité Científico y Organizador del Congreso Nacional de Ecografía SESEGO. Madrid, 2012. Toledo, Octubre, 2018.",
+                        "Participación como experta en imagen (Ecografía Tridimensional) con grupo de trabajo CONUTA (Sociedad Europea de Reproducción Humana y Embriología, ESHRE) en Documento de Consenso para el diagnóstico de las Malformaciones Uterinas y del Tracto Genital Inferior, ESHER/ESGE, 2016.",
+                        "Participación como experta en imagen (Ecografía Tridimensional) con grupo de trabajo CONUTA (Sociedad Europea de Reproducción Humana y Embriología, ESHRE) en Documento de Consenso para el diagnóstico de las Malformaciones Uterinas y del Tracto Genital Inferior, ESHER/ESGE, 2016.",
+                        "Participación en Third World Congress on Recurrent Pregnancy Loss WCRPL, Madrid, Junio 2018.",
+                        "Participación en múltiples congresos, simposium y reuniones nacionales e internacionales, como ponente (también comunicaciones, posters y vídeos) y profesora de talleres prácticos de ecografía 2 y 3D.",
+                        "Múltiples publicaciones en revistas nacionales e internacionales y en libros, manuales y tratados."
+                    ]
+                }
+            ],
+            "today": [
+                {
+                    "subtitle": "Líneas actuales de trabajo",
+                    "content": [
+                        "Experta en Ecografía Gineco-obstétrica y de Mama y en Diagnóstico Prenatal en Delta-Ecografía, Madrid, desde Octubre 2014."
+                    ]
+                }
+            ]
+        }
+    }
+}

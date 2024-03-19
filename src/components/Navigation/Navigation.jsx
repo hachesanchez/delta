@@ -47,11 +47,11 @@ export default function Navigation() {
 
                     <Offcanvas.Body>
                         <Nav className="justify-content-end flex-grow-1 pe-3">
-                            <Nav.Link as="span">
+                            {/* <Nav.Link as="span">
                                 <Link to="/" className="nav-link" onClick={handleLinkClick}>
                                     Inicio
                                 </Link>
-                            </Nav.Link>
+                            </Nav.Link> */}
                             <Nav.Link as="span">
                                 <Link to="/equipo" className="nav-link" onClick={handleLinkClick}>
                                     Equipo
