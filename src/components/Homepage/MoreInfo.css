@@ -19,7 +19,7 @@
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 50px;
-    margin-bottom: 80px;
+    margin-bottom: 10px;
 }
 
 .more-info-text {
@@ -99,6 +99,10 @@
     color: rgb(178, 255, 255);
 }
 
+.more-info-link {
+    display: none;
+}
+
 /* 
 @media (max-width: 1560px) {
 
@@ -149,5 +153,30 @@
     .more-info-card-link {
         margin-top: 0px;
         margin-bottom: 0px;
+    }
+
+    .more-info-link {
+        margin-bottom: 0;
+        background-color: rgb(235, 213, 172);
+        padding: 10px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .link {
+        text-decoration: none;
+        cursor: pointer;
+        color: #0a384e7d;
+        text-align: center;
+        background-color: inherit;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        margin: 0%;
+    }
+
+    .link:hover {
+        color: #68969c
     }
 }

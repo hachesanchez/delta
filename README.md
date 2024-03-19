@@ -10,6 +10,7 @@ This is the client side of the Delta Ultrasound application, a platform dedicate
 | ------------------------------------- | -------------------------------- | --------- |
 | `/`                                   | Home page                        |           |
 | `/equipo`                             | Team page                        |           |
+| `/hacemos`                            | All services page                |           |
 | `/hacemos/ecografia-obstetrica`       | Obstetric ultrasound page        |           |
 | `/hacemos/ecografia-ginecologica`     | Gynecological ultrasound page    |           |
 | `/hacemos/ecografia-oncologica`       | Oncological ultrasound page      |           |

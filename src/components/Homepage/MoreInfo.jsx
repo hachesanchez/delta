@@ -173,6 +173,13 @@ function MoreInfo() {
                     </div>
                 </div>
 
+                <div className="more-info-link">
+                    <Link to={'/hacemos'}>
+                        <p className="link">Explora todos nuestros servicios {'>>'}</p>
+                    </Link>
+                </div>
+
+
             </div>
         </>
     )

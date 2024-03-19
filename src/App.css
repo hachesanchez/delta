@@ -2,6 +2,13 @@ body {
   background-color: #465d7031
 }
 
+a {
+  text-decoration: none;
+  color: black;
+  margin: 0px;
+  padding: 0%;
+}
+
 .accordion {
   --bs-accordion-bg: white;
   --bs-accordion-border-color: transparent;
@@ -36,7 +43,7 @@ Grey-white: #F2F2F2
 - Green: #30B85B
 
 >> Complementarios a logo dark
-- Orange: #B87A30
+- Orange: #B87A30 // rgb(235, 213, 172);
 - Brown: #63503B
 
 
