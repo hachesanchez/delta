@@ -1,3 +1,8 @@
+.hero {
+    margin-top: 150px;
+    padding: 0px 0px 50px 70px;
+}
+
 .hero-row-header {
     align-items: center;
     margin: 0% !important;
@@ -100,6 +105,11 @@
 }
 
 @media (max-width: 992px) {
+
+    .hero {
+        margin-top: 50px;
+        padding: 0px
+    }
 
     .hero-body {
         flex-direction: column;

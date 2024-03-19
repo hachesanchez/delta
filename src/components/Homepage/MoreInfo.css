@@ -118,6 +118,11 @@
 
 @media (max-width: 992px) {
 
+    .more-info-card-container {
+        width: 270px;
+        height: 270px;
+    }
+
     .more-info-title {
         font-size: 1.5em;
     }
@@ -129,12 +134,20 @@
 
     .more-info-card-container {
         width: 95vw;
+        height: 220px;
+    }
+
+    .more-info-card .back {
+        width: 95vw;
     }
 
     .more-info-card-text {
-        font-size: 1em;
+        font-size: 0.8em;
         text-align: left;
-        padding: 15px;
     }
 
+    .more-info-card-link {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
 }

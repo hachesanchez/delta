@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react';
 import ReactCardFlip from 'react-card-flip';
 import './MoreInfo.css'
@@ -12,6 +12,7 @@ import iconNeuro from '../../assets/images/iconNeurosonografia.png'
 import iconEndometriosos from '../../assets/images/iconEndometriosis.png'
 import { useNavigate } from 'react-router';
 import { Link } from 'react-router-dom';
+import { BsDisplay } from 'react-icons/bs';
 
 
 function MoreInfo() {
@@ -77,7 +78,28 @@ function MoreInfo() {
         }
     ];
 
+    const [showAllCards, setShowAllCards] = useState(true)
     const [isFlipped, setIsFlipped] = useState({});
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+
+
+    useEffect(() => {
+        handleResize()
+        window.addEventListener('resize', handleResize)
+        return () => {
+            window.removeEventListener('resize', handleResize)
+        }
+    }, [])
+
+    useEffect(() => {
+        setShowAllCards(windowWidth > 768)
+    }, [windowWidth])
+
+
+    const handleResize = () => {
+        setWindowWidth(window.innerWidth)
+    }
+
 
     const handleMouseEnter = (name) => {
         setIsFlipped(prevState => ({
@@ -85,6 +107,7 @@ function MoreInfo() {
             [name]: true
         }));
     };
+
 
     const handleMouseLeave = (name) => {
         setIsFlipped(prevState => ({
@@ -119,8 +142,12 @@ function MoreInfo() {
 
                 <div className='more-info-cards'>
                     <div className='more-info-container-cards'>
-                        {data.map((e) => (
-                            <div className="more-info-card-container" key={e.name}>
+                        {data.map((e, index) => (
+                            <div
+                                className="more-info-card-container"
+                                key={e.name}
+                                style={{ display: (showAllCards || index < 4) ? 'block' : 'none' }}
+                            >
                                 <div
                                     className="more-info-card"
                                     onMouseEnter={() => handleMouseEnter(e.name)}

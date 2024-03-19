@@ -68,8 +68,8 @@
 }
 
 .dropdown-item:hover {
-    background-color: #B87A30 !important;
-    color: #eeeeee !important;
+    background-color: rgb(235, 213, 172) !important;
+    color: black !important;
 }
 
 .offcanvas.show .dropdown-menu {
@@ -83,8 +83,8 @@
 }
 
 .offcanvas.show .dropdown-item:hover {
-    background-color: #B87A30;
-    color: #eeeeee;
+    background-color: rgb(235, 213, 172);
+    color: black !important;
 }
 
 .navbar-nav .dropdown-menu {
