@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import './Footer.css';
 
 
@@ -86,6 +86,9 @@ function Footer() {
                             </a>
                             <a target='blank' rel='noreferer noopener' href="https://www.facebook.com/deltaecografia">
                                 <FaFacebook />
+                            </a>
+                            <a target='blank' rel='noreferer noopener' href="https://www.linkedin.com/company/delta-ecograf%C3%ADa/">
+                                <FaLinkedin />
                             </a>
                         </div>
                     </Col>

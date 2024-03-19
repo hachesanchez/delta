@@ -4,6 +4,10 @@
  } */
 
 
+ .team-slides {
+     margin-top: 40px;
+ }
+
  .swiper-slide {
      text-align: center;
      background: #fff;
@@ -24,6 +28,7 @@
  @media (max-width: 992px) {
 
      .swiper-slide {
-         height: 400px !important;
+         height: 300px !important;
      }
+
  }

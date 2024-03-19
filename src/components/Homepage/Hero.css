@@ -10,7 +10,7 @@
 
 .hero-image {
     text-align: right;
-    padding-right: 0px !important
+    padding-right: 0px !important;
 }
 
 .hero-image img {
@@ -137,7 +137,6 @@
     .hero-image img {
         object-fit: cover;
         height: 100%;
-        object-position: center;
         margin-bottom: 30px;
         position: relative
     }

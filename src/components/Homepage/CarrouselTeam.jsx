@@ -1,6 +1,6 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation } from 'swiper/modules';
+import { Pagination, Navigation, Keyboard } from 'swiper/modules';
 import slide1 from '../../assets/images/teamGeneral-1.jpg'
 import slide2 from '../../assets/images/teamGeneral-2.jpg'
 import slide3 from '../../assets/images/teamGeneral-3.jpg'
@@ -17,12 +17,16 @@ function CarrouselTeam() {
         <div className="team-slides" style={{ width: '100%' }}>
 
             <Swiper
-                spaceBetween={0}
-                slidesPerView={1}
-                navigation={true}
+                spaceBetween={20}
+                slidesPerView={'1.3'}
+                centeredSlides={true}
+                navigation={false}
                 loop={true}
                 pagination={{
                     clickable: true,
+                }}
+                keyboard={{
+                    enabled: true,
                 }}
                 modules={[Pagination, Navigation]}
                 onSwiper={(swiper) => console.log(swiper)}
