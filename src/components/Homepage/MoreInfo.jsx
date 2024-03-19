@@ -107,11 +107,11 @@ function MoreInfo() {
                 <div className='more-info-container-text'>
                     <div className="more-info-text">
                         <p className='more-info-title'>
-                            Dentro de nuestro trabajo somos pioneros en la ecografía tridimensional conocida como Ecografía 3D/4D.
+                            Somos pioneras en la ecografía tridimensional conocida como Ecografía 3D/4D
                         </p>
                         <p className='more-info-body'>
-                            La mayoría de la gente piensa que este tipo de ecografía solo es útil para las mujeres embarazadas, pero no es así.
-                            También es importante para otros estudios como los relacionados con las malformaciones uterinas, el suelo de la pelvis,
+                            Aunque la mayoría de la gente piensa que este tipo de ecografía solo es útil para las mujeres embarazadas, lo cierto
+                            es que también es muy importante para otros estudios como los relacionados con las malformaciones uterinas, el suelo de la pelvis,
                             los tumores de ovario o el cáncer de endometrio.
                         </p>
                     </div>

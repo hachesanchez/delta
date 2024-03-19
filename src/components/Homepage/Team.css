@@ -1,9 +1,9 @@
 .team {
-    background-color: #195672;
+    background-color: #1A5A73;
     display: flex;
     justify-content: center;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 350px;
+    padding-bottom: 350px;
 }
 
 .team-text {
@@ -18,8 +18,34 @@
     line-height: 110%;
 }
 
+.equipo-link {
+    position: relative;
+    text-decoration: none;
+    color: #B87A30;
+}
+
+.equipo-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #B87A30;
+    transition: width 0.3s ease;
+}
+
+.equipo-link:hover::after {
+    width: 100%;
+}
+
 
 @media (max-width: 992px) {
+
+    .team {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 
     .team-title {
         font-size: 2.2em;

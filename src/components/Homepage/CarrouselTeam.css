@@ -3,17 +3,6 @@
      margin-right: 0px !important;
  } */
 
- .team-slides img {
-     display: block;
-     width: 100%;
-     height: 100%;
-     object-fit: cover;
- }
-
- .swiper {
-     width: 100%;
-     height: 100%;
- }
 
  .swiper-slide {
      text-align: center;
@@ -21,4 +10,20 @@
      display: flex;
      justify-content: center;
      align-items: center;
+ }
+
+ .team-slides img {
+     display: block;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+
+
+
+ @media (max-width: 992px) {
+
+     .swiper-slide {
+         height: 400px !important;
+     }
  }
