@@ -9,6 +9,14 @@ a {
   padding: 0%;
 }
 
+.page-title {
+  font-size: 4.5em;
+  color: #1A5A73;
+  line-height: 100%;
+  font-family: 'Playfair', serif;
+
+}
+
 .accordion {
   --bs-accordion-bg: white;
   --bs-accordion-border-color: transparent;
