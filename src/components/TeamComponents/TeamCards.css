@@ -1,0 +1,97 @@
+ .team-row {
+     margin-top: 50px !important;
+ }
+
+ .team-username {
+     cursor: pointer;
+     border-bottom: 0.8px rgb(161, 161, 161) solid;
+     margin-top: 10px;
+     padding: 5px 0px 5px 10px;
+     color: #525759;
+ }
+
+ .team-username:hover {
+     background-color: rgb(235, 213, 172);
+ }
+
+ .team-username.active {
+     font-weight: 700;
+     color: #2f80b7;
+ }
+
+ .team-card-section {
+     background-color: #465d7031;
+     padding: 30px;
+     border-radius: 20px;
+ }
+
+ .team-intro {
+     font-size: 1.9em;
+     padding: 100px;
+     color: #364952
+ }
+
+ .team-avatar {
+     width: 300px;
+     height: auto;
+     border-radius: 5%;
+     opacity: 1;
+ }
+
+ .team-fullname {
+     font-size: 2em;
+     color: #525759;
+ }
+
+ .team-body {
+     margin-top: 10px;
+     color: #525759;
+ }
+
+ .team-subtitle {
+     text-transform: uppercase;
+ }
+
+ .team-subtitle-experience {
+     margin-top: 10px;
+ }
+
+ @media (max-width:1200px) {
+
+     .team-avatar {
+         width: 280px;
+     }
+ }
+
+ @media (max-width:992px) {
+     .team-intro {
+         font-size: 1em;
+         padding: 5px;
+     }
+
+     .team-avatar {
+         width: 200px;
+     }
+ }
+
+ @media (max-width:768px) {
+     .team-intro {
+         font-size: 1em;
+         padding: 5px;
+     }
+
+     .team-image-col {
+         text-align: center;
+     }
+
+     .team-avatar {
+         display: block;
+         margin: 0 auto;
+         max-width: 330px;
+         width: 100%;
+         height: auto;
+         border-radius: 5%;
+         padding: 10px;
+         opacity: 1;
+     }
+ }

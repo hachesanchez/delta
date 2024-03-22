@@ -1,6 +1,7 @@
 [
     {
-        "name": "Pilar Mártínez Ten",
+        "username": "Pilar Mártínez",
+        "fullName": "Pilar Mártínez Ten",
         "avatar": "https://res.cloudinary.com/dhxbmco0b/image/upload/v1710874118/delta/baja_DELTA_retratos-2_jbnvdw.jpg",
         "experience": [
             {
@@ -41,7 +42,7 @@
                 ]
             }
         ],
-        "today": [
+        "currentWork": [
             {
                 "subtitle": "Líneas actuales de trabajo",
                 "content": [
@@ -51,7 +52,8 @@
         ]
     },
     {
-        "name": "Carmina Bermejo",
+        "username": "Carmina Bermejo",
+        "fullName": "Carmina Bermejo",
         "avatar": "https://res.cloudinary.com/dhxbmco0b/image/upload/v1710874605/delta/baja_DELTA_retratos-3_izlblv.jpg",
         "experience": [
             {
@@ -93,7 +95,7 @@
                 ]
             }
         ],
-        "current_work": [
+        "currentWork": [
             {
                 "subtitle": "Líneas actuales de trabajo",
                 "content": [
@@ -103,7 +105,8 @@
         ]
     },
     {
-        "name": "Alicia Crespo Rivero",
+        "username": "Alicia Crespo",
+        "fullName": "Alicia Crespo Rivero",
         "avatar": "https://res.cloudinary.com/dhxbmco0b/image/upload/v1710874599/delta/baja_DELTA_retratos-15_dbdbb1.jpg",
         "experience": [
             {
@@ -133,7 +136,8 @@
         ]
     },
     {
-        "name": "Begoña Adiego Burgos",
+        "username": "Begoña Adiego",
+        "fullName": "Begoña Adiego Burgos",
         "avatar": "https://res.cloudinary.com/dhxbmco0b/image/upload/v1710874613/delta/baja_DELTA_retratos-11_ofvydq.jpg",
         "experience": [
             {
@@ -180,7 +184,8 @@
         ]
     },
     {
-        "name": "María Estevez",
+        "username": "María Estévez",
+        "fullName": "María Estevez",
         "avatar": "https://res.cloudinary.com/dhxbmco0b/image/upload/v1710874040/delta/baja_DELTA_retratos-10_njjscz.jpg",
         "experience": [
             {
@@ -202,7 +207,8 @@
         ]
     },
     {
-        "name": "Miguel Ángel Huertas",
+        "username": "M. Ángel Huertas",
+        "fullName": "Miguel Ángel Huertas",
         "avatar": "https://res.cloudinary.com/dhxbmco0b/image/upload/v1710874620/delta/baja_DELTA_retratos-16_ni1j13.jpg",
         "experience": [
             {
@@ -251,7 +257,8 @@
         ]
     },
     {
-        "name": "María Dolores Maresca Amate",
+        "username": "Mª Dolores Maresca",
+        "fullName": "María Dolores Maresca Amate",
         "avatar": "https://res.cloudinary.com/dhxbmco0b/image/upload/v1710874594/delta/baja_DELTA_retratos-1_bs9m93.jpg",
         "experience": [
             {
@@ -282,7 +289,8 @@
         ]
     },
     {
-        "name": "Belén Santacruz Martín",
+        "username": "Belén Santacruz",
+        "fullName": "Belén Santacruz Martín",
         "avatar": "https://res.cloudinary.com/dhxbmco0b/image/upload/v1710874602/delta/baja_DELTA_retratos-6_sxygc1.jpg",
         "experience": [
             {
@@ -306,7 +314,8 @@
         ]
     },
     {
-        "name": "Patricia Soler Ruiz",
+        "username": "Patricia Soler",
+        "fullName": "Patricia Soler Ruiz",
         "avatar": "https://res.cloudinary.com/dhxbmco0b/image/upload/v1710874273/delta/baja_DELTA_retratos-14_jixoap.jpg",
         "experience": [
             {
@@ -326,7 +335,8 @@
         ]
     },
     {
-        "name": "María del Mar Gil",
+        "username": "Mª del Mar Gil",
+        "fullName": "María del Mar Gil",
         "avatar": "https://res.cloudinary.com/dhxbmco0b/image/upload/v1710874615/delta/baja_DELTA_retratos-7_zypf4n.jpg",
         "experience": [
             {

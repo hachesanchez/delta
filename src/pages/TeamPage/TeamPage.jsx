@@ -1,48 +1,39 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
 import data from '../../team.json'
 import './TeamPage.css'
-import { Container, Row, Col } from 'react-bootstrap'
+import TeamCards from '../../components/TeamComponents/TeamCards'
 
 function TeamPage() {
 
-    const [selected, setSelected] = useState()
+    const [doctors, setDoctors] = useState([])
+    const [selected, setSelected] = useState(null)
 
-    const handleSelected = (name) => {
-        setSelected(name)
-        console.log(selected)
+    const handleSelected = (doctor) => {
+        setSelected(doctor)
     }
+
+    useEffect(() => {
+        setDoctors(data)
+    }, [])
+
+
+
 
     return (
 
         <>
             <div className="team-page">
-                <p className='page-title'>
+
+                <h1 className='page-title'>
                     Conoce al equipo
-                </p>
-            </div>
+                </h1>
 
-            <Container>
-                <Row>
+                <Container >
+                    <TeamCards doctors={doctors} selected={selected} handleSelected={handleSelected} />
+                </Container>
 
-                    <Col md={3} sm={12}>
-                        {data?.map((e) => (
-                            <div
-                                key={e.name}
-                                onClick={handleSelected}
-                                className='team-name'
-                            >
-                                {e.name}
-                            </div>
-                        ))}
-                    </Col>
-
-                    <Col md={9} sm={12}>
-                        <p className="team-intro">
-                            Delta es un Centro de Diagnóstico por la Imagen dirigido por Pilar Martínez-Ten y Carmina Bermejo formado por un equipo de profesionales altamente cualificados y con amplia experiencia en diagnóstico prenatal así como en patología ginecológica y de mama.
-                        </p>
-                    </Col>
-                </Row>
-            </Container>
+            </div >
 
 
         </>

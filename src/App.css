@@ -1,5 +1,5 @@
 body {
-  background-color: #465d7031
+  background-color: #c8c5c531
 }
 
 a {
@@ -13,8 +13,19 @@ a {
   font-size: 4.5em;
   color: #1A5A73;
   line-height: 100%;
+  display: flex;
+  justify-content: left;
+  margin-left: 80px;
   font-family: 'Playfair', serif;
+}
 
+@media (max-width:768px) {
+  .page-title {
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+  }
 }
 
 .accordion {
