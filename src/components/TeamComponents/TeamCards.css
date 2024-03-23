@@ -1,97 +1,111 @@
- .team-row {
-     margin-top: 50px !important;
- }
+.team-row {
+    margin-top: 50px !important;
+}
 
- .team-username {
-     cursor: pointer;
-     border-bottom: 0.8px rgb(161, 161, 161) solid;
-     margin-top: 10px;
-     padding: 5px 0px 5px 10px;
-     color: #525759;
- }
+.team-username {
+    cursor: pointer;
+    border-bottom: 1px solid rgb(161, 161, 161);
+    margin-top: 10px;
+    padding: 5px 10px;
+    color: #525759;
+    transition: background-color 0.3s;
+}
 
- .team-username:hover {
-     background-color: rgb(235, 213, 172);
- }
+.team-username:hover {
+    background-color: rgb(235, 213, 172);
+}
 
- .team-username.active {
-     font-weight: 700;
-     color: #2f80b7;
- }
+.team-username.active {
+    font-weight: 700;
+    color: #2f80b7;
+}
 
- .team-card-section {
-     background-color: #465d7031;
-     padding: 30px;
-     border-radius: 20px;
- }
+.team-card-section {
+    background-color: rgba(70, 93, 112, 0.052);
+    padding: 30px 20px 30px 20px;
+    border-radius: 20px;
+}
 
- .team-intro {
-     font-size: 1.9em;
-     padding: 100px;
-     color: #364952
- }
+.team-intro {
+    font-size: 1.9em;
+    padding: 30px;
+    color: #364952;
+}
 
- .team-avatar {
-     width: 300px;
-     height: auto;
-     border-radius: 5%;
-     opacity: 1;
- }
+.team-avatar {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5%;
+    opacity: 1;
+}
 
- .team-fullname {
-     font-size: 2em;
-     color: #525759;
- }
+.team-fullname {
+    font-size: 2em;
+    color: #525759;
+    margin-bottom: 40px;
+}
 
- .team-body {
-     margin-top: 10px;
-     color: #525759;
- }
+.team-body {
+    margin-top: 10px;
+    color: #525759;
+}
 
- .team-subtitle {
-     text-transform: uppercase;
- }
+.team-subtitle {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
 
- .team-subtitle-experience {
-     margin-top: 10px;
- }
+.team-experience,
+.team-publications,
+.team-presentations,
+.team-today {
+    margin-bottom: 15px;
+}
 
- @media (max-width:1200px) {
+@media (max-width: 1200px) {
+    .team-avatar {
+        max-width: 280px;
+        margin-bottom: 30px;
+    }
+}
 
-     .team-avatar {
-         width: 280px;
-     }
- }
+@media (max-width: 992px) {
+    .team-intro {
+        font-size: 1em;
+        padding: 10px 0;
+    }
 
- @media (max-width:992px) {
-     .team-intro {
-         font-size: 1em;
-         padding: 5px;
-     }
+    .team-avatar {
+        max-width: 200px;
+    }
+}
 
-     .team-avatar {
-         width: 200px;
-     }
- }
+@media (max-width: 768px) {
+    .team-card-section {
+        padding: 40px;
+    }
 
- @media (max-width:768px) {
-     .team-intro {
-         font-size: 1em;
-         padding: 5px;
-     }
+    .team-intro {
+        font-size: 1em;
+        padding: 10px 0;
+    }
 
-     .team-image-col {
-         text-align: center;
-     }
+    .team-username {
+        margin-top: 3px;
+        padding: 5px 10px;
+    }
 
-     .team-avatar {
-         display: block;
-         margin: 0 auto;
-         max-width: 330px;
-         width: 100%;
-         height: auto;
-         border-radius: 5%;
-         padding: 10px;
-         opacity: 1;
-     }
- }
+    .team-avatar {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .team-fullname {
+        font-size: 1.6em;
+        padding: 7px;
+    }
+}

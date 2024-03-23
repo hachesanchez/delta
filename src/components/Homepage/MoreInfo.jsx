@@ -161,7 +161,8 @@ function MoreInfo() {
                                             <div className="more-info-card-text">
                                                 <p className="more-info-card-title">{e.title}</p>
                                                 <p className="more-info-card-body">{e.body}</p>
-                                                <Link to={e.url} className='more-info-card-link' onClick={() => handleCardClick(e.url)}>
+                                                <Link to={'#'} className='more-info-card-link' onClick={() => handleCardClick(e.url)}>
+                                                    {/* </Link> <Link to={e.url} className='more-info-card-link' onClick={() => handleCardClick(e.url)}> */}
                                                     <p >Saber más</p>
                                                 </Link>
                                             </div>

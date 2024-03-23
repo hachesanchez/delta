@@ -1,14 +1,13 @@
-import React from 'react'
-import { Row, Col, Accordion, } from 'react-bootstrap'
-import './TeamCards.css'
+import React from 'react';
+import { Row, Col, Accordion } from 'react-bootstrap';
+import './TeamCards.css';
 
 function TeamCards({ doctors, selected, handleSelected }) {
 
     return (
 
         <Row className='team-row'>
-
-            <Col md={2} sm={12}>
+            <Col md={3} sm={12}>
                 {doctors?.map((doctor) => (
                     <div
                         key={doctor.username}
@@ -17,37 +16,31 @@ function TeamCards({ doctors, selected, handleSelected }) {
                     >
                         {doctor.username}
                     </div>
-
                 ))}
             </Col>
 
-            <Col md={{ span: 9, offset: 1 }} sm={12} className='team-card-section'>
+            <Col md={{ span: 8, offset: 1 }} sm={12} className='team-card-section'>
                 {!selected ?
-
                     <p className="team-intro">
                         Delta es un Centro de Diagnóstico por la Imagen dirigido por Pilar Martínez-Ten y Carmina Bermejo formado por un equipo de profesionales altamente cualificados y con amplia experiencia en diagnóstico prenatal así como en patología ginecológica y de mama.
                     </p>
-
                     :
-
                     <div className="team-selected">
                         {selected &&
                             <>
                                 <Row>
-                                    <Col className='team-image-col' sm={12} md={5}  >
+                                    <Col className='team-image-col' sm={12} md={12} lg={5}>
                                         <img className="team-avatar" src={selected.avatar} alt={selected.fullName} />
                                     </Col>
-                                    <Col sm={12} md={7}>
-                                        <p className='team-fullname'> {selected.fullName}</p>
+                                    <Col sm={12} md={12} lg={7}>
+                                        <p className='team-fullname'>{selected.fullName}</p>
                                         <div className="team-body">
                                             {selected.experience?.map((e, idx) => (
-                                                <div key={idx}>
+                                                <div key={idx} className="team-experience">
                                                     <Accordion className='team-subtitle-experience'>
-                                                        <Accordion.Item eventKey="0">
-                                                            <Accordion.Header >
-                                                                <div className='team-subtitle '>
-                                                                    <p>{e.subtitle}</p>
-                                                                </div>
+                                                        <Accordion.Item eventKey={idx}>
+                                                            <Accordion.Header>
+                                                                <p className='team-subtitle'>{e.subtitle}</p>
                                                             </Accordion.Header>
                                                             <Accordion.Body>
                                                                 <ul>
@@ -58,24 +51,16 @@ function TeamCards({ doctors, selected, handleSelected }) {
                                                             </Accordion.Body>
                                                         </Accordion.Item>
                                                     </Accordion>
-                                                    {/* <p className="team-subtitle">{e.subtitle}</p>
-                                                    <ul>
-                                                        {e.content.map((item, index) => (
-                                                            <li key={index}>{item}</li>
-                                                        ))}
-                                                    </ul> */}
                                                 </div>
                                             ))}
                                         </div>
                                         <div className="team-body">
                                             {selected.publications?.map((e, idx) => (
-                                                <div key={idx}>
+                                                <div key={idx} className="team-publications">
                                                     <Accordion>
-                                                        <Accordion.Item eventKey="0">
+                                                        <Accordion.Item eventKey={idx}>
                                                             <Accordion.Header>
-                                                                <div className=''>
-                                                                    <p className="team-subtitle">{e.subtitle}</p>
-                                                                </div>
+                                                                <p className='team-subtitle'>{e.subtitle}</p>
                                                             </Accordion.Header>
                                                             <Accordion.Body>
                                                                 <ul>
@@ -86,24 +71,16 @@ function TeamCards({ doctors, selected, handleSelected }) {
                                                             </Accordion.Body>
                                                         </Accordion.Item>
                                                     </Accordion>
-                                                    {/* <p className="team-subtitle">{e.subtitle}</p>
-                                                    <ul>
-                                                        {e.content.map((item, index) => (
-                                                            <li key={index}>{item}</li>
-                                                        ))}
-                                                    </ul> */}
                                                 </div>
                                             ))}
                                         </div>
                                         <div className="team-body">
                                             {selected.presentations?.map((e, idx) => (
-                                                <div key={idx}>
+                                                <div key={idx} className="team-presentations">
                                                     <Accordion>
-                                                        <Accordion.Item eventKey="0">
+                                                        <Accordion.Item eventKey={idx}>
                                                             <Accordion.Header>
-                                                                <div className=''>
-                                                                    <p className="team-subtitle">{e.subtitle}</p>
-                                                                </div>
+                                                                <p className='team-subtitle'>{e.subtitle}</p>
                                                             </Accordion.Header>
                                                             <Accordion.Body>
                                                                 <ul>
@@ -114,24 +91,16 @@ function TeamCards({ doctors, selected, handleSelected }) {
                                                             </Accordion.Body>
                                                         </Accordion.Item>
                                                     </Accordion>
-                                                    {/* <p className="team-subtitle">{e.subtitle}</p>
-                                                    <ul>
-                                                        {e.content.map((item, index) => (
-                                                            <li key={index}>{item}</li>
-                                                        ))}
-                                                    </ul> */}
                                                 </div>
                                             ))}
                                         </div>
                                         <div className="team-body">
-                                            {selected.currentWork?.map((e, idx) => (
-                                                <div key={idx}>
+                                            {selected.today?.map((e, idx) => (
+                                                <div key={idx} className="team-today">
                                                     <Accordion>
-                                                        <Accordion.Item eventKey="0">
+                                                        <Accordion.Item eventKey={idx}>
                                                             <Accordion.Header>
-                                                                <div className=''>
-                                                                    <p className="team-subtitle">{e.subtitle}</p>
-                                                                </div>
+                                                                <p className='team-subtitle'>{e.subtitle}</p>
                                                             </Accordion.Header>
                                                             <Accordion.Body>
                                                                 <ul>
@@ -142,12 +111,6 @@ function TeamCards({ doctors, selected, handleSelected }) {
                                                             </Accordion.Body>
                                                         </Accordion.Item>
                                                     </Accordion>
-                                                    <p className="team-subtitle">{e.subtitle}</p>
-                                                    <ul>
-                                                        {e.content.map((item, index) => (
-                                                            <li key={index}>{item}</li>
-                                                        ))}
-                                                    </ul>
                                                 </div>
                                             ))}
                                         </div>
@@ -156,11 +119,10 @@ function TeamCards({ doctors, selected, handleSelected }) {
                             </>
                         }
                     </div>
-
                 }
             </Col>
         </Row>
-    )
+    );
 }
 
-export default TeamCards
+export default TeamCards;
