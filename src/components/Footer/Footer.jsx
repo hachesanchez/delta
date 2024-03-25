@@ -18,7 +18,7 @@ function Footer() {
                         <p className="footer-title">QUIÉNES SOMOS</p>
                         <hr />
                         <div className="footer-links">
-                            <Link to={'#'}>Equipo</Link>
+                            <Link to="/equipo">Equipo</Link>
                             <br />
                             <Link to={'#'}>Publicaciones</Link>
                             <br />

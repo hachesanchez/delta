@@ -64,7 +64,8 @@ export default function Navigation() {
                                 >
                                     <NavDropdown.Item
                                         as={Link}
-                                        to={'/hacemos/ecografia-obstetrica'}
+                                        to={'#'}
+                                        //     to={'/hacemos/ecografia-obstetrica'}
                                         className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
@@ -72,14 +73,18 @@ export default function Navigation() {
                                     </NavDropdown.Item>
                                     <NavDropdown.Item
                                         as={Link}
-                                        to={'/hacemos/ecografia-ginecologica'} className='dropdown-item'
+                                        to={'#'}
+                                        //  to={'/hacemos/ecografia-ginecologica'} 
+                                        className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
                                         Ecografía Ginecológica
                                     </NavDropdown.Item>
                                     <NavDropdown.Item
                                         as={Link}
-                                        to={'/hacemos/ecografia-onclogogica'} className='dropdown-item'
+                                        to={'#'}
+                                        //  to={'/hacemos/ecografia-onclogogica'} 
+                                        className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
                                         Ecografía Onclogógica
@@ -87,7 +92,9 @@ export default function Navigation() {
                                     {/* <NavDropdown.Divider /> */}
                                     <NavDropdown.Item
                                         as={Link}
-                                        to={'/hacemos/ecografia-de-mama'} className='dropdown-item'
+                                        to={'#'}
+                                        // to={'/hacemos/ecografia-de-mama'} 
+                                        className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
                                         Ecografía de mama
@@ -95,7 +102,9 @@ export default function Navigation() {
                                     {/* <NavDropdown.Divider /> */}
                                     <NavDropdown.Item
                                         as={Link}
-                                        to={'/hacemos/neurosonografía'} className='dropdown-item'
+                                        to={'#'}
+                                        //  to={'/hacemos/neurosonografía'} 
+                                        className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
                                         Neurosonografía
@@ -103,7 +112,9 @@ export default function Navigation() {
                                     {/* <NavDropdown.Divider /> */}
                                     <NavDropdown.Item
                                         as={Link}
-                                        to={'/hacemos/earterias-uterinas'} className='dropdown-item'
+                                        to={'#'}
+                                        //  to={'/hacemos/earterias-uterinas'} 
+                                        className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
                                         Arterias uterinas
@@ -111,7 +122,8 @@ export default function Navigation() {
                                     {/* <NavDropdown.Divider /> */}
                                     <NavDropdown.Item
                                         as={Link}
-                                        to={'/hacemos/longitud-vertical'} className='dropdown-item'
+                                        //     to={'/hacemos/longitud-vertical'} 
+                                        className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
                                         Longitud vertical
@@ -119,7 +131,9 @@ export default function Navigation() {
                                     {/* <NavDropdown.Divider /> */}
                                     <NavDropdown.Item
                                         as={Link}
-                                        to={'/hacemos/dismorfologia-fetal'} className='dropdown-item'
+                                        to={'#'}
+                                        // to={'/hacemos/dismorfologia-fetal'} 
+                                        className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
                                         Dismorfología Fetal
@@ -127,7 +141,9 @@ export default function Navigation() {
                                     {/* <NavDropdown.Divider /> */}
                                     <NavDropdown.Item
                                         as={Link}
-                                        to={'/hacemos/malformaciones-uterinas'} className='dropdown-item'
+                                        to={'#'}
+                                        //   to={'/hacemos/malformaciones-uterinas'} 
+                                        className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
                                         Malformaciones Uterinas
@@ -135,7 +151,9 @@ export default function Navigation() {
                                     {/* <NavDropdown.Divider /> */}
                                     <NavDropdown.Item
                                         as={Link}
-                                        to={'/hacemos/suelo-pelvico'} className='dropdown-item'
+                                        to={'#'}
+                                        // to={'/hacemos/suelo-pelvico'}
+                                        className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
                                         Suelo Pélvico
@@ -143,14 +161,19 @@ export default function Navigation() {
                                     {/* <NavDropdown.Divider /> */}
                                     <NavDropdown.Item
                                         as={Link}
-                                        to={'/hacemos/histerosonosalpingrografía'} className='dropdown-item'
+                                        to={'#'}
+                                        // to={'/hacemos/histerosonosalpingrografía'}
+                                        className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
-                                        Histerosonosalpingrografía                                    </NavDropdown.Item>
+                                        Histerosonosalpingrografía
+                                    </NavDropdown.Item>
                                     {/* <NavDropdown.Divider /> */}
                                     <NavDropdown.Item
                                         as={Link}
-                                        to={'/hacemos/endometriosis-pelvica'} className='dropdown-item'
+                                        to={'#'}
+                                        //  to={'/hacemos/endometriosis-pelvica'}
+                                        className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
                                         Endometriosis Pélvica
@@ -168,7 +191,8 @@ export default function Navigation() {
                                 >
                                     <NavDropdown.Item
                                         as={Link}
-                                        to={'/sabermas/ecografia-3d-4d'}
+                                        to={'#'}
+                                        //  to={'/sabermas/ecografia-3d-4d'}
                                         className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
@@ -177,7 +201,8 @@ export default function Navigation() {
                                     {/* <NavDropdown.Divider /> */}
                                     <NavDropdown.Item
                                         as={Link}
-                                        to={'/sabermas/ecografia-embarazo'}
+                                        to={'#'}
+                                        //  to={'/sabermas/ecografia-embarazo'}
                                         className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
@@ -186,7 +211,8 @@ export default function Navigation() {
                                     {/* <NavDropdown.Divider /> */}
                                     <NavDropdown.Item
                                         as={Link}
-                                        to={'/sabermas/biopsia-corial'}
+                                        to={'#'}
+                                        // to={'/sabermas/biopsia-corial'}
                                         className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
@@ -195,7 +221,8 @@ export default function Navigation() {
                                     {/* <NavDropdown.Divider /> */}
                                     <NavDropdown.Item
                                         as={Link}
-                                        to={'/sabermas/amniocentesis'}
+                                        to={'#'}
+                                        //   to={'/sabermas/amniocentesis'}
                                         className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
@@ -204,7 +231,8 @@ export default function Navigation() {
                                     {/* <NavDropdown.Divider /> */}
                                     <NavDropdown.Item
                                         as={Link}
-                                        to={'/sabermas/cromosomopatia'}
+                                        to={'#'}
+                                        //  to={'/sabermas/cromosomopatia'}
                                         className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
@@ -213,7 +241,8 @@ export default function Navigation() {
                                     {/* <NavDropdown.Divider /> */}
                                     <NavDropdown.Item
                                         as={Link}
-                                        to={'/sabermas/microarrays'}
+                                        to={'#'}
+                                        //     to={'/sabermas/microarrays'}
                                         className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
@@ -222,7 +251,8 @@ export default function Navigation() {
                                     {/* <NavDropdown.Divider /> */}
                                     <NavDropdown.Item
                                         as={Link}
-                                        to={'/sabermas/adn-fetal'}
+                                        to={'#'}
+                                        //  to={'/sabermas/adn-fetal'}
                                         className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
@@ -232,7 +262,8 @@ export default function Navigation() {
                             </Nav.Link>
 
                             <Nav.Link as="span">
-                                <Link to="/contacta" className="nav-link" onClick={handleLinkClick}>
+                                <Link to={'#'} className="nav-link" onClick={handleLinkClick}>
+                                    {/* <Link to="/contacta" className="nav-link" onClick={handleLinkClick}> */}
                                     Contacta
                                 </Link>
                             </Nav.Link>
