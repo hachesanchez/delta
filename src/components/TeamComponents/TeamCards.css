@@ -1,78 +1,113 @@
-.team-row {
-    margin-top: 50px !important;
-    display: flex;
-    justify-content: center;
-}
+ .team-card-small {
+     display: none;
+ }
 
-.team-username {
-    cursor: pointer;
-    padding: 10px 20px;
-    color: #555;
-    font-size: 16px;
-    border: none;
-    background-color: transparent;
-    transition: color 0.3s ease;
-    border-bottom: 1px solid rgb(161, 161, 161);
-}
+ .team-card-large {
+     display: contents;
+ }
 
-.team-username:hover {
-    background-color: rgb(235, 213, 172);
-}
 
-.team-username.active {
-    font-weight: 700;
-    color: #2f80b7;
-}
+ .team-row {
+     margin-top: 50px !important;
+     display: flex;
+     justify-content: center;
+ }
 
-.team-card-section {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-}
+ .team-username {
+     cursor: pointer;
+     padding: 10px 20px;
+     color: #555;
+     font-size: 16px;
+     border: none;
+     background-color: transparent;
+     transition: color 0.3s ease;
+     border-bottom: 1px solid rgb(161, 161, 161);
+ }
 
-.team-intro {
-    font-size: 18px;
-    color: #555;
-    line-height: 1.6;
-    padding: 40px;
-}
+ .team-username:hover {
+     background-color: rgb(235, 213, 172);
+ }
 
-.team-avatar {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
+ .team-username.active {
+     font-weight: 700;
+     color: #2f80b7;
+ }
 
-.team-fullname {
-    font-size: 24px;
-    color: #555;
-    margin-bottom: 10px;
-}
+ .team-card-section {
+     background-color: #fff;
+     padding: 30px;
+     border-radius: 10px;
+     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+ }
 
-.team-body {
-    margin-top: 20px;
-    color: #555;
-}
+ .team-intro {
+     font-size: 18px;
+     color: #555;
+     line-height: 1.6;
+     padding: 40px;
+ }
 
-.team-subtitle {
+ .team-avatar {
+     width: 100%;
+     max-width: 300px;
+     height: auto;
+     border-radius: 10px;
+     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+ }
+
+ .team-fullname {
+     font-size: 24px;
+     color: #555;
+     margin-bottom: 10px;
+ }
+
+ .team-body {
+     margin-top: 20px;
+     color: #555;
+ }
+
+ /* .team-subtitle {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 5px;
-}
+} */
 
-.team-experience,
-.team-publications,
-.team-presentations,
-.team-today {
-    margin-top: 20px;
-}
+ .team-experience,
+ .team-publications,
+ .team-presentations,
+ .team-today {
+     margin-top: 20px;
+ }
 
-@media (max-width: 992px) {
-    .team-intro {
-        font-size: 16px;
-    }
-}
+ @media (max-width: 992px) {
+     .team-intro {
+         font-size: 16px;
+     }
+
+     .team-image-col {
+         align-items: center;
+         justify-content: center;
+         display: flex;
+         margin-bottom: 40px;
+     }
+
+     .team-intro {
+         font-size: 16px;
+     }
+
+     .team-image-col {
+         align-items: center;
+         justify-content: center;
+         display: flex;
+         margin-bottom: 40px;
+     }
+
+     .team-card-large {
+         display: none;
+     }
+
+     .team-card-small {
+         display: contents;
+     }
+ }
