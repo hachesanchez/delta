@@ -1,0 +1,23 @@
+.privacy-policy {
+    padding: 40px;
+}
+
+.privacy-subtitle-first {
+    font-weight: 500;
+}
+
+.privacy-subtitle {
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.privacy-body {
+    color: #555;
+    font-size: 0.8em;
+}
+
+@media (max-width:768px) {
+    .privacy-policy {
+        padding: 10px;
+    }
+}
