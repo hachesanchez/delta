@@ -1,0 +1,13 @@
+.contact-banner {
+    height: 100vh;
+    width: 100%;
+    border-bottom-right-radius: 80px 80px;
+    overflow: hidden;
+}
+
+.contact-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 60%;
+}

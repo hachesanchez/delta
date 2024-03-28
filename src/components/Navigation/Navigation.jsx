@@ -40,9 +40,11 @@ export default function Navigation() {
                     onHide={handleCloseOffcanvas}
                 >
                     <Offcanvas.Header closeButton>
-                        <Offcanvas.Title id="offcanvasNavbarLabel-expand-lg">
-                            delta ecografía
-                        </Offcanvas.Title>
+                        <Link to="/" onClick={handleLinkClick}>
+                            <Offcanvas.Title id="offcanvasNavbarLabel-expand-lg">
+                                delta ecografía
+                            </Offcanvas.Title>
+                        </Link>
                     </Offcanvas.Header>
 
                     <Offcanvas.Body>
@@ -262,8 +264,7 @@ export default function Navigation() {
                             </Nav.Link>
 
                             <Nav.Link as="span">
-                                <Link to={'#'} className="nav-link" onClick={handleLinkClick}>
-                                    {/* <Link to="/contacta" className="nav-link" onClick={handleLinkClick}> */}
+                                <Link to="/contacta" className="nav-link" onClick={handleLinkClick}>
                                     Contacta
                                 </Link>
                             </Nav.Link>

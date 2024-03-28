@@ -21,7 +21,7 @@
      border: none;
      background-color: transparent;
      transition: color 0.3s ease;
-     border-bottom: 1px solid rgb(161, 161, 161);
+     border-bottom: 1px solid rgb(216, 216, 216);
  }
 
  .team-username:hover {
@@ -38,6 +38,7 @@
      padding: 30px;
      border-radius: 10px;
      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+     align-items: center;
  }
 
  .team-intro {
@@ -56,9 +57,13 @@
  }
 
  .team-fullname {
-     font-size: 24px;
-     color: #555;
+     font-size: 23px;
+     background-color: #195672;
+     color: white;
      margin-bottom: 10px;
+     padding: 4px 4px 4px 14px;
+     border-radius: 3px;
+
  }
 
  .team-body {
