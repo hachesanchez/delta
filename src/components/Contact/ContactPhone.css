@@ -1,0 +1,39 @@
+.phone-row {
+    padding: 30px;
+    margin: 50px;
+    border: 1px rgb(149, 149, 149) solid;
+    text-align: center;
+}
+
+
+.contact-phone svg {
+    height: auto;
+    width: 70px;
+    max-width: 70px;
+    text-align: end;
+    filter: opacity(0.9);
+}
+
+.phone-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #1d1d1d;
+}
+
+.phone-title {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 991px) {
+
+    .phone-row {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .contact-phone svg {
+        margin-bottom: 15px;
+    }
+}

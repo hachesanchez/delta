@@ -1,0 +1,36 @@
+.opening-hours-row {
+    align-items: center;
+    padding: 30px;
+    margin: 50px;
+    border: 1px rgb(149, 149, 149) solid;
+}
+
+.contact-clock svg {
+    height: auto;
+    width: 60px;
+    max-width: 70px;
+}
+
+.opening-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #1d1d1d;
+}
+
+.opening-title {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 991px) {
+
+    .opening-hours-row {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .contact-clock svg {
+        margin-bottom: 15px;
+    }
+}

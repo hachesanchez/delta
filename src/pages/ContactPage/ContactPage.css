@@ -1,5 +1,10 @@
- .contact-page-row {
+ .contact-banner-form-row {
      --bs-gutter-x: 0% !important;
      display: flex;
+     align-items: center;
+ }
+
+ .contact-moreinfo-row {
+     --bs-gutter-x: 0% !important;
      align-items: center;
  }

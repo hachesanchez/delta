@@ -22,7 +22,7 @@ function Footer() {
                             <br />
                             <Link to={'#'}>Publicaciones</Link>
                             <br />
-                            <Link to={'#'}>Contacta</Link>
+                            <Link to={'/contacta'}>Contacta</Link>
                             <br />
                         </div>
                     </Col>
