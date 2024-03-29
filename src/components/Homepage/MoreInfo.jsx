@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import { useState } from 'react';
 import ReactCardFlip from 'react-card-flip';
 import './MoreInfo.css'
-import iconAmnio from '../../assets/images/iconAmniocentesis.png'
 import iconBiopsia from '../../assets/images/iconBiopsia.png'
 import iconCromo from '../../assets/images/iconCromosomopatia.png'
 import iconDismorfo from '../../assets/images/iconDismorfologia.png'
@@ -12,7 +11,7 @@ import iconNeuro from '../../assets/images/iconNeurosonografia.png'
 import iconEndometriosos from '../../assets/images/iconEndometriosis.png'
 import { useNavigate } from 'react-router';
 import { Link } from 'react-router-dom';
-import { BsDisplay } from 'react-icons/bs';
+import iconAmnio from '../../assets/images/iconAmniocentesis.png'
 
 
 function MoreInfo() {
@@ -175,7 +174,7 @@ function MoreInfo() {
                 </div>
 
                 <div className="more-info-link">
-                    <Link to={'/hacemos'}>
+                    <Link to={'/servicios'}>
                         <p className="link">Explora todos nuestros servicios {'>>'}</p>
                     </Link>
                 </div>

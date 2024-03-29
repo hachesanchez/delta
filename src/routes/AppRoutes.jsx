@@ -5,6 +5,7 @@ import TeamPage from '../pages/TeamPage/TeamPage'
 import ContactPage from '../pages/ContactPage/ContactPage'
 import PrivacyPolicyPage from '../pages/PrivacyPolicyPage/PrivacyPolicyPage'
 import Services from '../pages/ServicesPage/Services'
+import SpecificServicePage from '../pages/SpecificServicePage/SpecificServicePage'
 
 function AppRoutes() {
 
@@ -18,6 +19,7 @@ function AppRoutes() {
                 <Route path='/equipo' element={<TeamPage />} />
                 <Route path='/contacta' element={<ContactPage />} />
                 <Route path='/servicios' element={<Services />} />
+                <Route path='/servicios/:id' element={<SpecificServicePage />} />
                 <Route path='/politica-de-privacidad' element={<PrivacyPolicyPage />} />
 
             </Routes>

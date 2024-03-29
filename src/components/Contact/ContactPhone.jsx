@@ -7,10 +7,10 @@ function ContactPhone() {
     return (
         <div className="phone-row">
             <Row  >
-                < Col md={{ span: 2, offset: 3 }} className='contact-phone'>
+                <Col md={{ span: 2, offset: 2 }} className='contact-phone'>
                     <LuPhone />
                 </Col>
-                <Col md={7} sm={10} className='phone'>
+                <Col md={8} sm={10} className='phone'>
                     <div className="phone-content">
                         <p className="phone-title">
                             Teléfono de contacto

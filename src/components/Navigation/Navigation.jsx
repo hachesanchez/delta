@@ -67,7 +67,7 @@ export default function Navigation() {
                                     <NavDropdown.Item
                                         as={Link}
                                         to={'#'}
-                                        //     to={'/hacemos/ecografia-obstetrica'}
+                                        //     to={'/servicios/ecografia-obstetrica'}
                                         className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
@@ -76,7 +76,7 @@ export default function Navigation() {
                                     <NavDropdown.Item
                                         as={Link}
                                         to={'#'}
-                                        //  to={'/hacemos/ecografia-ginecologica'} 
+                                        //  to={'/servicios/ecografia-ginecologica'} 
                                         className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
@@ -85,7 +85,7 @@ export default function Navigation() {
                                     <NavDropdown.Item
                                         as={Link}
                                         to={'#'}
-                                        //  to={'/hacemos/ecografia-onclogogica'} 
+                                        //  to={'/servicios/ecografia-oncologica'} 
                                         className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
@@ -95,7 +95,7 @@ export default function Navigation() {
                                     <NavDropdown.Item
                                         as={Link}
                                         to={'#'}
-                                        // to={'/hacemos/ecografia-de-mama'} 
+                                        // to={'/servicios/ecografia-de-mama'} 
                                         className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
@@ -105,7 +105,7 @@ export default function Navigation() {
                                     <NavDropdown.Item
                                         as={Link}
                                         to={'#'}
-                                        //  to={'/hacemos/neurosonografía'} 
+                                        //  to={'/servicios/neurosonografía'} 
                                         className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
@@ -115,7 +115,7 @@ export default function Navigation() {
                                     <NavDropdown.Item
                                         as={Link}
                                         to={'#'}
-                                        //  to={'/hacemos/earterias-uterinas'} 
+                                        //  to={'/servicios/earterias-uterinas'} 
                                         className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
@@ -124,7 +124,7 @@ export default function Navigation() {
                                     {/* <NavDropdown.Divider /> */}
                                     <NavDropdown.Item
                                         as={Link}
-                                        //     to={'/hacemos/longitud-vertical'} 
+                                        //     to={'/servicios/longitud-vertical'} 
                                         className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
@@ -134,7 +134,7 @@ export default function Navigation() {
                                     <NavDropdown.Item
                                         as={Link}
                                         to={'#'}
-                                        // to={'/hacemos/dismorfologia-fetal'} 
+                                        // to={'/servicios/dismorfologia-fetal'} 
                                         className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
@@ -144,7 +144,7 @@ export default function Navigation() {
                                     <NavDropdown.Item
                                         as={Link}
                                         to={'#'}
-                                        //   to={'/hacemos/malformaciones-uterinas'} 
+                                        //   to={'/servicios/malformaciones-uterinas'} 
                                         className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
@@ -154,7 +154,7 @@ export default function Navigation() {
                                     <NavDropdown.Item
                                         as={Link}
                                         to={'#'}
-                                        // to={'/hacemos/suelo-pelvico'}
+                                        // to={'/servicios/suelo-pelvico'}
                                         className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
@@ -164,7 +164,7 @@ export default function Navigation() {
                                     <NavDropdown.Item
                                         as={Link}
                                         to={'#'}
-                                        // to={'/hacemos/histerosonosalpingografía'}
+                                        // to={'/servicios/histerosonosalpingografia'}
                                         className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
@@ -174,7 +174,7 @@ export default function Navigation() {
                                     <NavDropdown.Item
                                         as={Link}
                                         to={'#'}
-                                        //  to={'/hacemos/endometriosis-pelvica'}
+                                        //  to={'/servicios/endometriosis-pelvica'}
                                         className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
