@@ -1,7 +1,7 @@
 [
     {
         "name": "ecoObste",
-        "image": "",
+        "image": "https://res.cloudinary.com/dhxbmco0b/image/upload/v1711736764/delta/iconEcografia_x06bjr.png",
         "title": "Ecografía Obstétrica",
         "url": "/servicios/ecografia-obstetrica",
         "content": [
@@ -21,7 +21,7 @@
     },
     {
         "name": "ecoGine",
-        "image": "",
+        "image": "https://res.cloudinary.com/dhxbmco0b/image/upload/v1711736766/delta/iconGine_j25qrx.png",
         "title": "Ecografía Ginecológica",
         "url": "/servicios/ecografia-ginecologica",
         "content": [
@@ -41,7 +41,7 @@
     },
     {
         "name": "ecoOnco",
-        "image": "",
+        "image": "https://res.cloudinary.com/dhxbmco0b/image/upload/v1711736770/delta/iconOnco_alrrkj.png",
         "title": "Ecografía Oncológica",
         "url": "/servicios/ecografia-oncologica",
         "content": [
@@ -68,7 +68,7 @@
     },
     {
         "name": "ecoMama",
-        "image": "",
+        "image": "https://res.cloudinary.com/dhxbmco0b/image/upload/v1711736749/delta/iconBreast_dd15uf.png",
         "title": "Ecografía de mama",
         "url": "/servicios/ecografia-de-mama",
         "content": [
@@ -88,7 +88,7 @@
     },
     {
         "name": "nerurosonografía",
-        "image": "",
+        "image": "https://res.cloudinary.com/dhxbmco0b/image/upload/v1711736769/delta/iconNeurosonografia_ltfqgr.png",
         "title": "Nerurosonografía",
         "url": "/servicios/neurosonografía",
         "content": [
@@ -108,7 +108,7 @@
     },
     {
         "name": "histerosonosalpingografía",
-        "image": "",
+        "image": "https://res.cloudinary.com/dhxbmco0b/image/upload/v1711736767/delta/iconHisterosonosalpingografia_ge95kt.png",
         "title": "Histerosonosalpingografía (HyCosy)",
         "url": "/servicios/histerosonosalpingografia",
         "content": [
@@ -128,7 +128,7 @@
     },
     {
         "name": "arterias",
-        "image": "",
+        "image": "https://res.cloudinary.com/dhxbmco0b/image/upload/v1711736747/delta/iconArteria_vvy0fg.png",
         "title": "Arterias Uterinas",
         "url": "/servicios/earterias-uterinas",
         "content": [
@@ -148,7 +148,7 @@
     },
     {
         "name": "longitud",
-        "image": "",
+        "image": "https://res.cloudinary.com/dhxbmco0b/image/upload/v1711736768/delta/iconLongitud_wmhbr3.png",
         "title": "Longitud vertical",
         "url": "/servicios/longitud-vertical",
         "content": [
@@ -168,7 +168,7 @@
     },
     {
         "name": "dismorfología",
-        "image": "",
+        "image": "https://res.cloudinary.com/dhxbmco0b/image/upload/v1711736764/delta/iconDismorfologia_fwjo3a.png",
         "title": "Dismorfología fetal",
         "url": "/servicios/dismorfologia-fetal",
         "content": [
@@ -188,7 +188,7 @@
     },
     {
         "name": "malformaciones",
-        "image": "",
+        "image": "https://res.cloudinary.com/dhxbmco0b/image/upload/v1711736751/delta/iconCromosomopatia_mnb8ca.png",
         "title": "Malformaciones uterinas ",
         "url": "/servicios/malformaciones-uterinas",
         "content": [
@@ -208,7 +208,7 @@
     },
     {
         "name": "suelo",
-        "image": "",
+        "image": "https://res.cloudinary.com/dhxbmco0b/image/upload/v1711736771/delta/iconPelvis_gjtjsh.png",
         "title": "Suelo pélvico ",
         "url": "/servicios/suelo-pelvico",
         "content": [
@@ -228,7 +228,7 @@
     },
     {
         "name": "endometriosis",
-        "image": "",
+        "image": "https://res.cloudinary.com/dhxbmco0b/image/upload/v1711736765/delta/iconEndometriosis_evddsu.png",
         "title": "Endometriosis pélvica",
         "url": "/servicios/endometriosis-pelvica",
         "content": [
