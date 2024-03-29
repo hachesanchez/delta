@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
 import data from '../../services.json'
-import { Col, Row } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 import './SpecificServicePage.css'
 
 
@@ -15,6 +15,9 @@ function SpecificServicePage() {
     }, [])
 
     const foundService = data.find((service) => service.url === `/servicios/${id}`)
+    if (!service || !service.content) {
+        return <p>Cargando...</p>
+    }
 
 
     return (
@@ -29,6 +32,22 @@ function SpecificServicePage() {
                     <p>{service.title}</p>
                 </div>
             </div>
+
+            <Container>
+                {service.content.map((e) => (
+                    <div>
+
+                        <p>
+                            {e.subtitle}
+                        </p>
+                        <ul>
+                            {e.list.map((j, idx) => (
+                                <li key={idx}>{j}</li>
+                            ))}
+                        </ul>
+                    </div>
+                ))}
+            </Container>
 
         </div>
     )
