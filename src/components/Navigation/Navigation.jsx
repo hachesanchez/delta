@@ -164,11 +164,11 @@ export default function Navigation() {
                                     <NavDropdown.Item
                                         as={Link}
                                         to={'#'}
-                                        // to={'/hacemos/histerosonosalpingrografía'}
+                                        // to={'/hacemos/histerosonosalpingografía'}
                                         className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
-                                        Histerosonosalpingrografía
+                                        Histerosonosalpingografía
                                     </NavDropdown.Item>
                                     {/* <NavDropdown.Divider /> */}
                                     <NavDropdown.Item

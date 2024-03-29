@@ -26,16 +26,12 @@ function TeamPage() {
             <h1 className='page-title'>
                 Conoce al equipo
             </h1>
+
             <div className="team-page">
-
-
                 <Container >
                     <TeamCards doctors={doctors} selected={selected} handleSelected={handleSelected} />
                 </Container>
-
             </div >
-
-
         </>
     )
 }
