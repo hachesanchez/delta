@@ -3,14 +3,16 @@ import { Modal } from 'react-bootstrap';
 import PrivacyPolicy from '../PrivacyPolicy/PrivacyPolicy';
 
 function PolicyModal({ show, setOpenPolicy }) {
+
     return (
+
         <Modal
             show={show}
             onHide={() => setOpenPolicy(false)}
             size="lg"
             aria-labelledby="contained-modal-title-vcenter"
             centered
-            className="contact-modal"
+            className="policy-modal"
         >
             <Modal.Header closeButton>
                 <Modal.Title>

@@ -2,10 +2,9 @@ import React from 'react'
 import { Row, Col } from 'react-bootstrap'
 import ContactBanner from '../../components/Contact/ContactBanner'
 import ContactForm from '../../components/Contact/ContactForm'
-import { LuCalendarClock } from "react-icons/lu";
-import './ContactPage.css'
 import OpeningHours from '../../components/Contact/OpeningHours';
 import ContactPhone from '../../components/Contact/ContactPhone';
+import './ContactPage.css'
 
 
 function ContactPage() {
@@ -18,7 +17,7 @@ function ContactPage() {
                 <Col md={6} >
                     <ContactBanner />
                 </Col>
-                <Col md={6}>
+                <Col md={6} className='contact-form-component'>
                     <ContactForm />
                 </Col>
             </Row>

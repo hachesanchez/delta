@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import './Footer.css';
+import ContactModal from './ContactModal';
 
 
 
 function Footer() {
+
+    const [contactModal, setContactModal] = useState(false)
+
+    const handleModal = () => {
+        setContactModal(true)
+        console.log('soy la modal')
+        console.log(contactModal)
+
+    }
+
 
     return (
 
@@ -60,7 +71,8 @@ function Footer() {
                         <p className="footer-title">Contacta</p>
                         <hr />
                         <div className="footer-links">
-                            <Link to='#'>Escríbenos</Link>
+                            <Link onClick={handleModal}>Escríbenos</Link>
+
                             <br />
                             <Link to='#'>Conoce la clínica</Link>
                             <br />
@@ -68,10 +80,10 @@ function Footer() {
                     </Col>
                 </Row>
                 <hr />
-                {/* TODO: Aviso legal, cookies, privacidad */}
+                {/* TODO: Aviso legal, cookies */}
                 <Row className='footer-sections'>
                     <Col className='footer-extra-links' lg={6} md={12} sm={12} >
-                        <Link to={'#'}>Política de Privacidad</Link> |
+                        <Link to={'/politica-de-privacidad'}>Política de Privacidad</Link> |
                         <Link to={'#'}> Política de Cookies</Link> |
                         <Link to='#'> Aviso legal</Link>
                         <div className="footer-copy">
@@ -95,8 +107,13 @@ function Footer() {
                 </Row>
 
             </Container>
+
+            <ContactModal show={contactModal} setContactModal={setContactModal} />
+
         </div >
-    );
+
+    )
+
 }
 
 export default Footer;

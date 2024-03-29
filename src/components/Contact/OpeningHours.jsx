@@ -7,10 +7,10 @@ function OpeningHours() {
     return (
         <div className="opening-hours-row">
             <Row >
-                <Col md={3} sm={2} className='contact-clock'>
+                <Col md={{ span: 2, offset: 2 }} sm={2} className='contact-clock'>
                     <LuCalendarClock />
                 </Col>
-                <Col md={9} sm={10} className='opening'>
+                <Col md={8} sm={10} className='opening'>
                     <div className="opening-content">
                         <p className="opening-title">
                             Horario de consulta

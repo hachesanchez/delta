@@ -31,6 +31,7 @@ This is the client side of the Delta Ultrasound application, a platform dedicate
 | `/sabermas/microarrays`               | Microarrays page                 |           |
 | `/sabermas/adn-fetal`                 | Fetal DNA in maternal blood page |           |
 | `/contacta`                           | Contact page                     |           |
+| `/politica-de-privacidad`             | Privacy Policy Page              |           |
 
 ## Technologies Used
 

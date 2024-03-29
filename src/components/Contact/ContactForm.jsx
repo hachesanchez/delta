@@ -11,7 +11,7 @@ function ContactForm() {
     const [state, handleSubmit] = useForm("mvoewzjg");
     const [isBoxChecked, setIsBoxChecked] = useState(false);
     const [openPolicy, setOpenPolicy] = useState(false)
-    const [insuranceChecked, setInsuranceChecked] = useState(null);
+    const [insuranceChecked, setInsuranceChecked] = useState(false);
 
 
     const handleCheckbox = (e) => {
@@ -101,8 +101,7 @@ function ContactForm() {
                             onChange={handleInsuranceChange}
                         />
                     </div>
-                    <input type="hidden" name="insurance" value={insuranceChecked} />                    <ValidationError prefix="Insurance" field="insurance" errors={state.errors} />
-                </FormGroup>
+                    <input type="hidden" name="insurance" value={insuranceChecked.toString()} />                </FormGroup>
 
                 <FormGroup controlId="message">
                     <FloatingLabel

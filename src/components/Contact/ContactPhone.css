@@ -1,17 +1,15 @@
 .phone-row {
+    align-items: center;
     padding: 30px;
     margin: 50px;
     border: 1px rgb(149, 149, 149) solid;
-    text-align: center;
+    max-width: 700px;
 }
-
 
 .contact-phone svg {
     height: auto;
-    width: 70px;
+    width: 60px;
     max-width: 70px;
-    text-align: end;
-    filter: opacity(0.9);
 }
 
 .phone-content {

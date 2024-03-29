@@ -6,14 +6,14 @@ import './ContactPhone.css'
 function ContactPhone() {
     return (
         <div className="phone-row">
-            <Row   >
-                <Col md={6} sm={6} className='contact-phone'>
+            <Row  >
+                < Col md={{ span: 2, offset: 3 }} className='contact-phone'>
                     <LuPhone />
                 </Col>
-                <Col md={6} sm={6} className='opening'>
+                <Col md={7} sm={10} className='phone'>
                     <div className="phone-content">
                         <p className="phone-title">
-                            Teléfono
+                            Teléfono de contacto
                         </p>
                         <p className="phone-body">
                             914320891

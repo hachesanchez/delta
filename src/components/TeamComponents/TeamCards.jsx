@@ -89,6 +89,7 @@ function TeamCards({ doctors, selected, handleSelected }) {
                                 {selected && selected.username === doctor.username && (
                                     <div className='team-card-section'>
                                         {!selected ?
+                                            // TODO: "team-intro" NOT SHOWING on small screen
                                             <p className="team-intro">
                                                 Delta es un Centro de Diagnóstico por la Imagen dirigido por Pilar Martínez-Ten y Carmina Bermejo formado por un equipo de profesionales altamente cualificados y con amplia experiencia en diagnóstico prenatal así como en patología ginecológica y de mama.
                                             </p>

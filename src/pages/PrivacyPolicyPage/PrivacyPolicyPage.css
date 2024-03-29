@@ -1,0 +1,11 @@
+.privacy-policy-page {
+    margin-top: 30px;
+    padding: 80px;
+}
+
+@media (max-width: 991px) {
+    .privacy-policy-page {
+        padding: 10px;
+    }
+
+}
