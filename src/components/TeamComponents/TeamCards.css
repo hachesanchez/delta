@@ -20,7 +20,7 @@
      border: none;
      background-color: transparent;
      transition: color 0.3s ease;
-     border-bottom: 1px solid rgb(216, 216, 216);
+     border-bottom: 1px solid rgba(216, 216, 216, 0.539);
  }
 
  .team-username:hover {
@@ -33,7 +33,7 @@
  }
 
  .team-card-section {
-     background-color: #fff;
+     background-color: rgba(255, 255, 255, 0);
      padding: 30px;
      border-radius: 10px;
      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
@@ -56,17 +56,18 @@
  }
 
  .team-fullname {
-     font-size: 23px;
+     font-size: 20px;
      background-color: #195672;
      color: white;
-     margin-bottom: 10px;
-     padding: 4px 4px 4px 14px;
-     border-radius: 3px;
+     margin-bottom: 45px;
+     padding: 5px;
+     /* border-radius: 50% 10%; */
+     border-radius: 30px;
+     text-align: center;
 
  }
 
  .team-body {
-     margin-top: 20px;
      color: #555;
  }
 
@@ -81,7 +82,7 @@
  .team-publications,
  .team-presentations,
  .team-today {
-     margin-top: 20px;
+     margin-top: 5px;
  }
 
  @media (max-width: 992px) {
