@@ -43,6 +43,22 @@ a {
   --bs-accordion-transition: color 0.30s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
 }
 
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+
+}
+
+.row {
+  --bs-gutter-x: 0px !important;
+}
+
 /* 
 
 COLOR PALETTE

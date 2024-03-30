@@ -35,17 +35,28 @@ function SpecificServicePage() {
 
             <Container>
                 {service.content.map((e) => (
-                    <div>
+                    <Row>
+                        <Col>
+                            <div className='service-text'>
+                                <p className='service-subtitle'>
+                                    {e.subtitle}
+                                </p>
+                                <ul className='service-list'>
+                                    {e.list.map((j, idx) => (
+                                        <li key={idx}>{j}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </Col>
+                        <Col>
+                            <div className="service-images">
+                                {e.images.map((i) => (
+                                    <img src={i} alt={service.tite} className='specific-service-images'></img>
+                                ))}
 
-                        <p>
-                            {e.subtitle}
-                        </p>
-                        <ul>
-                            {e.list.map((j, idx) => (
-                                <li key={idx}>{j}</li>
-                            ))}
-                        </ul>
-                    </div>
+                            </div>
+                        </Col>
+                    </Row>
                 ))}
             </Container>
 

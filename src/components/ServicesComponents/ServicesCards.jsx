@@ -13,6 +13,7 @@ import iconLongitud from '../../assets/images/iconLongitud.png'
 import iconArteria from '../../assets/images/iconArteria.png'
 import iconPelvis from '../../assets/images/iconPelvis.png'
 import iconEndometriosos from '../../assets/images/iconEndometriosis.png'
+import iconMalformacion from '../../assets/images/iconMalformacion.png'
 import { useNavigate } from 'react-router';
 import { Link } from 'react-router-dom';
 import './ServicesCards.css'
@@ -71,7 +72,7 @@ function ServicesCards() {
             url: '/servicios/dismorfologia-fetal'
         }, {
             name: 'malformaciones',
-            image: iconCromo,
+            image: iconMalformacion,
             title: 'Malformaciones uterinas ',
             url: '/servicios/malformaciones-uterinas'
         }, {
