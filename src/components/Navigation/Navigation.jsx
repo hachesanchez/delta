@@ -75,8 +75,7 @@ export default function Navigation() {
                                     </NavDropdown.Item>
                                     <NavDropdown.Item
                                         as={Link}
-                                        to={'#'}
-                                        //  to={'/servicios/ecografia-ginecologica'} 
+                                        to={'/servicios/ecografia-ginecologica'}
                                         className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
@@ -84,12 +83,11 @@ export default function Navigation() {
                                     </NavDropdown.Item>
                                     <NavDropdown.Item
                                         as={Link}
-                                        to={'#'}
-                                        //  to={'/servicios/ecografia-oncologica'} 
+                                        to={'/servicios/ecografia-oncologica'}
                                         className='dropdown-item'
                                         onClick={handleLinkClick}
                                     >
-                                        Ecografía Onclogógica
+                                        Ecografía Oncológica
                                     </NavDropdown.Item>
                                     {/* <NavDropdown.Divider /> */}
                                     <NavDropdown.Item

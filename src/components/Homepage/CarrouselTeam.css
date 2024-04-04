@@ -8,7 +8,7 @@
      margin-top: 40px;
  }
 
- .swiper-slide {
+ .team-carousel-slide {
      text-align: center;
      background: #fff;
      display: flex;
@@ -27,7 +27,7 @@
 
  @media (max-width: 992px) {
 
-     .swiper-slide {
+     .team-carousel-slide {
          height: 300px !important;
      }
 

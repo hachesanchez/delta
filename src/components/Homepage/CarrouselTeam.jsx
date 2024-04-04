@@ -30,24 +30,23 @@ function CarrouselTeam() {
                     enabled: true,
                 }}
                 modules={[Pagination, Navigation]}
-                onSwiper={(swiper) => console.log(swiper)}
             >
-                <SwiperSlide>
+                <SwiperSlide className='team-carousel-slide'>
                     <img src={slide5} alt='Equipo de Delta Ecografía' />
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className='team-carousel-slide'>
                     <img src={slide3} alt='Equipo de Delta Ecografía' />
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className='team-carousel-slide'>
                     <img src={slide1} alt='Equipo de Delta Ecografía' />
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className='team-carousel-slide'>
                     <img src={slide2} alt='Equipo de Delta Ecografía' />
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className='team-carousel-slide'>
                     <img src={slide4} alt='Equipo de Delta Ecografía' />
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className='team-carousel-slide'>
                     <img src={slide6} alt='Equipo de Delta Ecografía' />
                 </SwiperSlide>
             </Swiper>

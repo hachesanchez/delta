@@ -99,7 +99,32 @@
 }
 
 .more-info-link {
-    display: none;
+    margin-bottom: 0px !important;
+    background-color: rgb(235, 213, 172);
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.more-info-link p {
+    margin-bottom: 0px !important;
+}
+
+.link {
+    text-decoration: none;
+    cursor: pointer;
+    color: #0a384e7d;
+    text-align: center;
+    background-color: inherit;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 0%;
+}
+
+.link:hover {
+    color: #68969c
 }
 
 /* 
@@ -154,7 +179,7 @@
         margin-bottom: 0px;
     }
 
-    .more-info-link {
+    /* .more-info-link {
         margin-bottom: 0;
         background-color: rgb(235, 213, 172);
         padding: 10px;
@@ -177,5 +202,5 @@
 
     .link:hover {
         color: #68969c
-    }
+    } */
 }
